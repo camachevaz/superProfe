@@ -1,6 +1,6 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Formato condicional
+subtitle: Microsoft Excel y Google Sheets
 layout: default
 modal-id: 1
 date: 2014-07-18

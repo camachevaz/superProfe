@@ -17,20 +17,23 @@
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p>{{ post.description }}</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
+                                <li>Aplicaciones:
+                                    {% comment %}<strong><a href="http://startbootstrap.com">{{ post.client }}</a>{% endcomment %}
                                     </strong>
+                                    <strong>{{ post.client }}</strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
-                                    </strong>
+                                    {% comment %}<strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
+                                    </strong>{% endcomment %}
+                                    <strong>{{ post.project-date }}</strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
-                                    </strong>
+                                    {% comment %}<strong><a href="http://startbootstrap.com">{{ post.category }}</a>
+                                    </strong>{% endcomment %}
+                                    <strong>{{ post.category }}</strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
                         </div>
                     </div>
                 </div>
