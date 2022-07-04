@@ -2,14 +2,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+                    <span class="copyright">&copy; <a href="https://asesoreducativo.mx/">CHEE asesores educativos</a> {{ 'now' | date: "%Y" }}</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
+                        <li><a href="https://wa.me/526869462551">Whatsapp 686-946-2551</a></li>
+                        {% comment %}
                         {% for network in site.social %}
                         <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
                         </li>
                         {% endfor %}
+                        {% endcomment %}
                     </ul>
                 </div>
                 <div class="col-md-4">
