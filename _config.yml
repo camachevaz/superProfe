@@ -9,7 +9,7 @@ description: "Conviértete en Súper Profe con todas las habilidades necesarias 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Carlos Chee
   pic: 1
   position: Lead Designer
   social:
@@ -20,28 +20,7 @@ people:
     - title: stack-overflow
       url: #
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
-
+{% comment %}
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
@@ -54,11 +33,12 @@ social:
     url: http://bitbucket.org/jekyll
   - title: github
     url: http://github.com/jekyll
+{% endcomment %}
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: 
+  - line: Mexicalim, Baja California, MX
 
 # Build settings
 markdown: kramdown
