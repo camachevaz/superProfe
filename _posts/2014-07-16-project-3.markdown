@@ -1,15 +1,13 @@
 ---
-title: Golden
-subtitle: Website Design
+title: Estructura de funciones
+apps: Microsoft Excel y Google Sheets
 layout: default
 modal-id: 3
 date: 2014-07-16
 img: golden.png
 thumbnail: golden-thumbnail.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+modulo: Hola fórmulas y funciones
+description: Estructura operaciones simples o complejas para realizar automáticamente cualquier cálculo que necesites.
 
 ---
