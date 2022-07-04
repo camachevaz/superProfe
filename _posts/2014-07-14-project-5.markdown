@@ -2,10 +2,10 @@
 title: Comparte contenido de forma segura
 apps: Zoom, Meet, Teams
 layout: default
-modal-id: 5
+modal-id: 6
 date: 2014-07-14
-img: 05.gif
-thumbnail: 05-thumb.gif
+img: 06.gif
+thumbnail: 06-thumb.gif
 alt: image-alt
 modulo: Sé un as de las videollamadas
 description: Comparte exactamente lo que necesitas en el momento que lo deseas. Controla qué y cómo compartes contenido en tus sesiones y ten siempre la seguridad de tu privacidad.
