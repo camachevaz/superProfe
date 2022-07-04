@@ -4,8 +4,8 @@ apps: Microsoft Excel y Google Sheets
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+img: 01.gif
+thumbnail: 01-thumb.gif
 alt: image-alt
 modulo: Las hojas de cálculo
 description: Resalta datos dependiendo del valor que muestran para analizar mejor a simple vista tus datos.

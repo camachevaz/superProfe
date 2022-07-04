@@ -4,8 +4,8 @@ apps: Microsoft Excel y Google Sheets
 layout: default
 modal-id: 2
 date: 2014-07-17
-img: escape.png
-thumbnail: escape-thumbnail.png
+img: 02.gif
+thumbnail: 02-thumb.gif
 alt: image-alt
 modulo: Las hojas de cálculo
 description: Desplázate sin problemas entre grandes cantidades de información, ve solo lo que necesites sin modificar el contenido y personaliza tu vista.
