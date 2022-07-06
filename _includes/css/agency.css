@@ -874,7 +874,8 @@ text-align: center;}
 background-color: #777;
 margin-top: 0;
 padding: .5rem;
-color:#fff;}
+color:#fff;
+font-weight: normal;}
 #precios #popular div h3{background-color: #004588;}
 #precios #popular div{background-color: #fff;
 box-shadow: 5px 5px 10px #777;}
