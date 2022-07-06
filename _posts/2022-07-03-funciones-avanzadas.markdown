@@ -3,7 +3,7 @@ title: Funciones avanzadas
 apps: Microsoft Excel y Google Sheets
 layout: default
 modal-id: 4
-date: 2022-07-04
+date: 2022-07-03
 img: 04.gif
 thumbnail: 04-thumb.gif
 alt: image-alt

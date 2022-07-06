@@ -3,7 +3,7 @@ title: Videollamadas seguras
 apps: Zoom, Meet, Teams
 layout: default
 modal-id: 5
-date: 2022-07-05
+date: 2022-07-02
 img: 05.gif
 thumbnail: 05-thumb.gif
 alt: image-alt

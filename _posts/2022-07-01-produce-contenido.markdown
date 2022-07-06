@@ -3,7 +3,7 @@ title: Produce contenido
 apps: OBS, YouTube
 layout: default
 modal-id: 6
-date: 2022-07-06
+date: 2022-07-01
 img: 06.gif
 thumbnail: 06-thumb.gif
 alt: image-alt

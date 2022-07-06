@@ -3,7 +3,7 @@ title: Navega tus datos
 apps: Microsoft Excel y Google Sheets
 layout: default
 modal-id: 2
-date: 2022-07-02
+date: 2022-07-05
 img: 02.gif
 thumbnail: 02-thumb.gif
 alt: image-alt
