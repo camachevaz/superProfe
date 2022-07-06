@@ -866,7 +866,7 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
-#precios #popular{border: solid 1px #bbb;
-border-radius: 1rem;
-background-color: #fff;
+#precios .col-md-4, #precios #popular{border-radius: 1rem;
+border: solid 1px #bbb;}
+#precios #popular{background-color: #fff;
 box-shadow: 5px 5px 10px #777;}
