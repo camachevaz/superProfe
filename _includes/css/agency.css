@@ -868,6 +868,9 @@ body {
 
 #precios .col-md-4 div, #precios #popular div{border-radius: 1rem;
 border: solid 1px #bbb;
-margin:.25rem;}
+margin:.25rem;
+text-align: center;}
+#precios .col-md-4 div h2, #precios #popular div h2{border-radius: 1rem 1rem 0 0;
+background-color: #777;}
 #precios #popular div{background-color: #fff;
 box-shadow: 5px 5px 10px #777;}
