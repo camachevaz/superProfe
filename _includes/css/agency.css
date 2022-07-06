@@ -871,6 +871,9 @@ border: solid 1px #bbb;
 margin:.25rem;
 text-align: center;}
 #precios .col-md-4 div h3, #precios #popular div h3{border-radius: 1rem 1rem 0 0;
-background-color: #777;}
+background-color: #777;
+margin-top: 0;
+padding: .5rem;
+color:#fff;}
 #precios #popular div{background-color: #fff;
 box-shadow: 5px 5px 10px #777;}
