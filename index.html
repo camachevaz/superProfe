@@ -4,15 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SúperProfe · Tecnología al servicio del aula</title>
-<meta name="description" content="Dos programas para docentes: SúperProfe Esencial y SúperProfe Aula. Mexicali y en línea.">
+<meta name="description" content="Dos programas para docentes: SúperProfe Esencial (modular, flexible) y SúperProfe Aula (16 hrs, NEM, escuelas privadas). Mexicali y en línea.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
 <style>
-/* ═══════════════════════════════════════════
-   TOKENS — Sistema SúperProfe
-   Identidad Visual Final · V2
-═══════════════════════════════════════════ */
 :root {
   --coral:      #FF726B;
   --marina:     #76D1C5;
@@ -31,305 +27,309 @@
   --tinta-06:   rgba(32,36,47,.06);
   --display: 'Bricolage Grotesque', system-ui, sans-serif;
   --body:    'Hanken Grotesk', system-ui, sans-serif;
-  --r-sm:  6px; --r-md: 12px; --r-lg: 18px; --r-xl: 24px; --r-2xl: 32px;
+  --r-sm:6px; --r-md:12px; --r-lg:18px; --r-xl:24px; --r-2xl:32px;
 }
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body { font-family: var(--body); background: var(--crema); color: var(--tinta); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-img { display: block; }
-a { color: inherit; }
-ul { list-style: none; }
-
-.wrap { max-width: 1140px; margin: 0 auto; padding-left: clamp(20px,5vw,48px); padding-right: clamp(20px,5vw,48px); position: relative; }
-.section { padding-top: clamp(64px,10vw,96px); padding-bottom: clamp(64px,10vw,96px); }
-
-.chispa { display: inline-block; color: var(--coral); font-size: 1em; line-height: 1; flex-shrink: 0; }
-.chispa-marina { color: var(--marina); }
-.chispa-melon  { color: var(--melon);  }
-.chispa-tinta  { color: var(--tinta);  }
-
-.label { font-family: var(--display); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tinta-60); }
-.h1 { font-family: var(--display); font-weight: 800; font-size: clamp(40px,8vw,76px); line-height: 1.0; letter-spacing: -0.03em; color: var(--crema); }
-.h1 .alt { color: var(--melon); }
-.h2 { font-family: var(--display); font-weight: 700; font-size: clamp(28px,5vw,48px); line-height: 1.06; letter-spacing: -0.025em; }
-.lead { font-size: clamp(16px,2.5vw,18px); line-height: 1.7; color: var(--tinta-60); }
-
-.btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--display); font-weight: 700; font-size: 15px; text-decoration: none; cursor: pointer; padding: 13px 24px; border-radius: var(--r-lg); border: none; transition: transform .15s, box-shadow .15s, background .15s; letter-spacing: -0.01em; }
-.btn:hover { transform: translateY(-2px); }
-.btn-coral { background: var(--coral); color: white; box-shadow: 0 4px 16px rgba(255,114,107,.35); }
-.btn-coral:hover { box-shadow: 0 8px 24px rgba(255,114,107,.50); }
-.btn-marina { background: var(--marina); color: var(--tinta); box-shadow: 0 4px 16px rgba(118,209,197,.35); }
-.btn-marina:hover { box-shadow: 0 8px 24px rgba(118,209,197,.50); }
-.btn-tinta { background: var(--tinta); color: var(--crema); }
-.btn-tinta:hover { background: #2e3344; }
-.btn-ghost-coral { background: transparent; color: var(--coral); border: 2px solid var(--coral); }
-.btn-ghost-coral:hover { background: var(--coral-dim); }
-.btn-ghost-marina { background: transparent; color: var(--tinta); border: 2px solid var(--marina); }
-.btn-ghost-marina:hover { background: var(--marina-dim); }
-.btn-ghost-crema { background: transparent; color: var(--crema); border: 2px solid rgba(251,245,234,.4); }
-.btn-ghost-crema:hover { background: rgba(251,245,234,.1); }
-.btn-lg { font-size: 17px; padding: 16px 30px; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--crema);color:var(--tinta);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block} a{color:inherit} ul{list-style:none}
+.wrap{max-width:1140px;margin:0 auto;padding-left:clamp(20px,5vw,48px);padding-right:clamp(20px,5vw,48px);position:relative}
+.section{padding-top:clamp(64px,10vw,96px);padding-bottom:clamp(64px,10vw,96px)}
+.chispa{display:inline-block;color:var(--coral);font-size:1em;line-height:1;flex-shrink:0}
+.chispa-marina{color:var(--marina)} .chispa-melon{color:var(--melon)} .chispa-tinta{color:var(--tinta)}
+.label{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-60)}
+.h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,8vw,76px);line-height:1.0;letter-spacing:-.03em;color:var(--crema)}
+.h1 .alt{color:var(--melon)}
+.h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,5vw,48px);line-height:1.06;letter-spacing:-.025em}
+.lead{font-size:clamp(16px,2.5vw,18px);line-height:1.7;color:var(--tinta-60)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;padding:13px 24px;border-radius:var(--r-lg);border:none;transition:transform .15s,box-shadow .15s,background .15s;letter-spacing:-.01em}
+.btn:hover{transform:translateY(-2px)}
+.btn-coral{background:var(--coral);color:white;box-shadow:0 4px 16px rgba(255,114,107,.35)}
+.btn-coral:hover{box-shadow:0 8px 24px rgba(255,114,107,.50)}
+.btn-marina{background:var(--marina);color:var(--tinta);box-shadow:0 4px 16px rgba(118,209,197,.35)}
+.btn-marina:hover{box-shadow:0 8px 24px rgba(118,209,197,.50)}
+.btn-tinta{background:var(--tinta);color:var(--crema)}
+.btn-tinta:hover{background:#2e3344}
+.btn-ghost-coral{background:transparent;color:var(--coral);border:2px solid var(--coral)}
+.btn-ghost-coral:hover{background:var(--coral-dim)}
+.btn-ghost-marina{background:transparent;color:var(--tinta);border:2px solid var(--marina)}
+.btn-ghost-marina:hover{background:var(--marina-dim)}
+.btn-ghost-crema{background:transparent;color:var(--crema);border:2px solid rgba(251,245,234,.4)}
+.btn-ghost-crema:hover{background:rgba(251,245,234,.1)}
+.btn-lg{font-size:17px;padding:16px 30px}
 
 /* NAV */
-.nav { position: sticky; top: 0; z-index: 100; background: rgba(251,245,234,.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--tinta-12); }
-.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 13px 0; }
-.brand { display: flex; align-items: center; gap: 8px; text-decoration: none; }
-.brand-logo { font-family: var(--display); font-weight: 800; font-size: 18px; letter-spacing: -0.03em; color: var(--tinta); }
-.brand-logo span { color: var(--coral); }
-.brand-sep { width: 1px; height: 18px; background: var(--tinta-12); }
-.brand-sub { font-family: var(--display); font-size: 11px; font-weight: 600; letter-spacing: 0.1em; color: var(--tinta-60); text-transform: uppercase; }
-.nav-links-wrap { display: flex; align-items: center; gap: 4px; }
-.nav-link { text-decoration: none; color: var(--tinta-60); font-size: 14px; font-weight: 500; padding: 7px 12px; border-radius: var(--r-sm); transition: color .15s, background .15s; }
-.nav-link:hover { color: var(--tinta); background: var(--tinta-06); }
-
-/* Lang toggle */
-.lang-toggle { display: inline-flex; border: 1.5px solid var(--tinta-12); border-radius: 999px; overflow: hidden; font-family: var(--display); font-size: 12px; font-weight: 700; margin-left: 8px; }
-.lang-toggle button { border: 0; padding: 6px 13px; cursor: pointer; font: inherit; background: transparent; color: var(--tinta-60); transition: background .15s, color .15s; letter-spacing: 0.06em; }
-.lang-toggle button[aria-pressed="true"] { background: var(--coral); color: #fff; }
-
-.nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 40px; height: 40px; padding: 0; border: 1.5px solid var(--tinta-12); border-radius: var(--r-sm); background: transparent; cursor: pointer; }
-.nav-toggle span { display: block; height: 2px; width: 18px; margin: 0 auto; background: var(--tinta); transition: .25s; }
-.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-@media (max-width: 800px) {
-  .nav-toggle { display: inline-flex; }
-  .nav-links-wrap { position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; background: var(--crema); border-bottom: 1px solid var(--tinta-12); padding: 8px 20px 20px; gap: 0; transform: translateY(-8px); opacity: 0; pointer-events: none; transition: .2s; z-index: 1; }
-  .nav-links-wrap.open { transform: none; opacity: 1; pointer-events: auto; }
-  .nav-link { padding: 13px 8px; border-bottom: 1px solid var(--tinta-06); font-size: 16px; }
-  .nav-links-wrap .btn { margin-top: 14px; justify-content: center; }
-  .lang-toggle { margin: 14px 0 0; align-self: flex-start; }
+.nav{position:sticky;top:0;z-index:100;background:rgba(251,245,234,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--tinta-12)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+.brand-logo{font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:-.03em;color:var(--tinta)}
+.brand-logo span{color:var(--coral)}
+.brand-sep{width:1px;height:18px;background:var(--tinta-12)}
+.brand-sub{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--tinta-60);text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-link{text-decoration:none;color:var(--tinta-60);font-size:14px;font-weight:500;padding:7px 12px;border-radius:var(--r-sm);transition:color .15s,background .15s}
+.nav-link:hover{color:var(--tinta);background:var(--tinta-06)}
+.lang{display:inline-flex;border:1.5px solid var(--tinta-12);border-radius:999px;overflow:hidden;font-family:var(--display);font-size:12px;font-weight:700;margin-left:8px}
+.lang button{border:0;padding:6px 13px;cursor:pointer;font:inherit;background:transparent;color:var(--tinta-60);transition:background .15s,color .15s;letter-spacing:.06em}
+.lang button[aria-pressed="true"]{background:var(--coral);color:#fff}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;padding:0;border:1.5px solid var(--tinta-12);border-radius:var(--r-sm);background:transparent;cursor:pointer}
+.nav-toggle span{display:block;height:2px;width:18px;margin:0 auto;background:var(--tinta);transition:.25s}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:800px){
+  .nav-toggle{display:inline-flex}
+  .nav-links{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:var(--crema);border-bottom:1px solid var(--tinta-12);padding:8px 20px 20px;gap:0;transform:translateY(-8px);opacity:0;pointer-events:none;transition:.2s;z-index:1}
+  .nav-links.open{transform:none;opacity:1;pointer-events:auto}
+  .nav-link{padding:13px 8px;border-bottom:1px solid var(--tinta-06);font-size:16px}
+  .nav-links .btn{margin-top:14px;justify-content:center}
+  .lang{margin:14px 0 0;align-self:flex-start}
 }
 
 /* HERO */
-.hero { background: var(--tinta); position: relative; overflow: hidden; padding-top: clamp(64px,12vw,104px); padding-bottom: clamp(64px,12vw,104px); }
-.hero::before { content: ''; position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,114,107,.22) 0%, transparent 70%); top: -100px; right: -100px; pointer-events: none; }
-.hero::after  { content: ''; position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(118,209,197,.14) 0%, transparent 70%); bottom: -80px; left: 60px; pointer-events: none; }
-.hero-inner { position: relative; z-index: 1; display: grid; gap: clamp(40px,6vw,72px); }
-@media (min-width: 860px) { .hero-inner { grid-template-columns: 1.1fr 0.9fr; align-items: center; } }
-.hero-kicker-wrap { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 22px; }
-.hero-kicker-wrap .chispa { font-size: 16px; }
-.hero-kicker-text { font-family: var(--display); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(251,245,234,.5); }
-.hero-cta-wrap { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 0; }
-.hero-stats { display: flex; gap: 24px; flex-wrap: wrap; padding: 18px 0; margin-top: 4px; border-top: 1px solid rgba(251,245,234,.1); }
-.hs-num { font-family: var(--display); font-size: 28px; font-weight: 800; color: var(--crema); letter-spacing: -0.04em; }
-.hs-num b { color: var(--coral); }
-.hs-lbl { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(251,245,234,.4); margin-top: 2px; font-family: var(--display); }
-
-.sw-card { display: flex; align-items: center; gap: 16px; padding: 20px 22px; border-radius: var(--r-xl); border: 1.5px solid rgba(251,245,234,.1); background: rgba(251,245,234,.05); text-decoration: none; transition: background .15s, border-color .15s, transform .15s; }
-.sw-card:hover { transform: translateX(4px); }
-.sw-card.coral  { border-color: rgba(255,114,107,.35); background: rgba(255,114,107,.1); }
-.sw-card.coral:hover  { border-color: rgba(255,114,107,.6); background: rgba(255,114,107,.18); }
-.sw-card.marina { border-color: rgba(118,209,197,.35); background: rgba(118,209,197,.1); }
-.sw-card.marina:hover { border-color: rgba(118,209,197,.6); background: rgba(118,209,197,.18); }
-.sw-chispa { font-size: 22px; flex-shrink: 0; }
-.sw-name { font-family: var(--display); font-size: 17px; font-weight: 700; color: var(--crema); margin-bottom: 3px; letter-spacing: -0.02em; }
-.sw-tag  { font-family: var(--display); font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(251,245,234,.4); }
-.sw-arr  { color: rgba(251,245,234,.3); flex-shrink: 0; margin-left: auto; }
-#hero-switcher { display: flex; flex-direction: column; gap: 12px; }
+.hero{background:var(--tinta);position:relative;overflow:hidden;padding-top:clamp(64px,12vw,104px);padding-bottom:clamp(64px,12vw,104px)}
+.hero::before{content:'';position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(255,114,107,.22) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
+.hero::after{content:'';position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(118,209,197,.14) 0%,transparent 70%);bottom:-80px;left:60px;pointer-events:none}
+.hero-inner{position:relative;z-index:1;display:grid;gap:clamp(40px,6vw,72px)}
+@media(min-width:860px){.hero-inner{grid-template-columns:1.1fr 0.9fr;align-items:center}}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;margin-bottom:22px}
+.hero-kicker .chispa{font-size:16px}
+.hero-kicker-lbl{font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,245,234,.5)}
+.hero h1{margin-bottom:22px}
+.hero .lead{color:rgba(251,245,234,.6);margin-bottom:36px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-switcher{display:flex;flex-direction:column;gap:12px}
+.sw-card{display:flex;align-items:center;gap:16px;padding:20px 22px;border-radius:var(--r-xl);border:1.5px solid rgba(251,245,234,.1);background:rgba(251,245,234,.05);text-decoration:none;transition:background .15s,border-color .15s,transform .15s}
+.sw-card:hover{transform:translateX(4px)}
+.sw-card.coral{border-color:rgba(255,114,107,.35);background:rgba(255,114,107,.1)}
+.sw-card.coral:hover{border-color:rgba(255,114,107,.6);background:rgba(255,114,107,.18)}
+.sw-card.marina{border-color:rgba(118,209,197,.35);background:rgba(118,209,197,.1)}
+.sw-card.marina:hover{border-color:rgba(118,209,197,.6);background:rgba(118,209,197,.18)}
+.sw-chispa{font-size:22px;flex-shrink:0}
+.sw-name{font-family:var(--display);font-size:17px;font-weight:700;color:var(--crema);margin-bottom:3px;letter-spacing:-.02em}
+.sw-tag{font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(251,245,234,.4)}
+.sw-arr{color:rgba(251,245,234,.3);flex-shrink:0;margin-left:auto}
+.hero-stats{display:flex;gap:24px;flex-wrap:wrap;padding:18px 0;margin-top:4px;border-top:1px solid rgba(251,245,234,.1)}
+.hs-num{font-family:var(--display);font-size:28px;font-weight:800;color:var(--crema);letter-spacing:-.04em}
+.hs-num b{color:var(--coral)}
+.hs-lbl{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:rgba(251,245,234,.4);margin-top:2px;font-family:var(--display)}
 
 /* SECTIONS */
-.sec-crema  { background: var(--crema); }
-.sec-white  { background: #fff; }
-.sec-head { margin-bottom: clamp(32px,5vw,52px); }
-.sec-head .label { margin-bottom: 14px; display: block; }
-.sec-head .h2   { margin-bottom: 12px; }
-hr.rule { border: 0; height: 1px; background: var(--tinta-12); }
+.sec-crema{background:var(--crema)} .sec-white{background:#fff}
+.sec-head{margin-bottom:clamp(32px,5vw,52px)}
+.sec-head .label{margin-bottom:14px;display:block}
+.sec-head .h2{margin-bottom:12px}
+hr.rule{border:0;height:1px;background:var(--tinta-12)}
 
-/* ESENCIAL MODULES */
-.mod-grid { display: flex; flex-direction: column; gap: 1px; background: var(--tinta-12); border: 1px solid var(--tinta-12); border-radius: var(--r-xl); overflow: hidden; }
-.mod-row { display: flex; align-items: stretch; background: #fff; transition: background .15s; }
-.mod-row:hover { background: var(--crema); }
-.mod-num { width: 56px; flex-shrink: 0; display: flex; align-items: flex-start; justify-content: center; padding: 22px 0; border-right: 1px solid var(--tinta-12); }
-.mod-num span { font-family: var(--display); font-size: 11px; font-weight: 600; color: var(--tinta-30); letter-spacing: 0.08em; }
-.mod-body { flex: 1; padding: 20px 22px; }
-.mod-body h4 { font-family: var(--display); font-size: 17px; font-weight: 700; color: var(--tinta); margin-bottom: 5px; letter-spacing: -0.015em; }
-.mod-body p  { font-size: 14px; color: var(--tinta-60); line-height: 1.55; margin: 0; }
-.mod-hrs { width: 52px; flex-shrink: 0; display: flex; align-items: flex-start; justify-content: flex-end; padding: 22px 16px 22px 0; border-left: 1px solid var(--tinta-12); }
-.mod-hrs span { font-family: var(--display); font-size: 11px; font-weight: 600; color: var(--tinta-30); letter-spacing: 0.06em; }
-.mod-foot { background: var(--crema); padding: 14px 22px; border-top: 1px solid var(--tinta-12); font-size: 13px; color: var(--tinta-60); }
-.mod-foot b { color: var(--coral); }
+/* MODULES */
+.mod-grid{display:flex;flex-direction:column;gap:1px;background:var(--tinta-12);border:1px solid var(--tinta-12);border-radius:var(--r-xl);overflow:hidden}
+.mod-row{display:flex;align-items:stretch;background:#fff;transition:background .15s}
+.mod-row:hover{background:var(--crema)}
+.mod-num{width:56px;flex-shrink:0;display:flex;align-items:flex-start;justify-content:center;padding:22px 0;border-right:1px solid var(--tinta-12)}
+.mod-num span{font-family:var(--display);font-size:11px;font-weight:600;color:var(--tinta-30);letter-spacing:.08em}
+.mod-body{flex:1;padding:20px 22px}
+.mod-body h4{font-family:var(--display);font-size:17px;font-weight:700;color:var(--tinta);margin-bottom:5px;letter-spacing:-.015em}
+.mod-body p{font-size:14px;color:var(--tinta-60);line-height:1.55;margin:0}
+.mod-hrs{width:52px;flex-shrink:0;display:flex;align-items:flex-start;justify-content:flex-end;padding:22px 16px 22px 0;border-left:1px solid var(--tinta-12)}
+.mod-hrs span{font-family:var(--display);font-size:11px;font-weight:600;color:var(--tinta-30);letter-spacing:.06em}
+.mod-foot{background:var(--crema);padding:14px 22px;border-top:1px solid var(--tinta-12);font-size:13px;color:var(--tinta-60)}
+.mod-foot b{color:var(--coral)}
 
 /* PRICES */
-.price-stack { display: flex; flex-direction: column; gap: 10px; }
-.price-card { border: 1.5px solid var(--tinta-12); border-radius: var(--r-xl); padding: 22px 24px; background: #fff; position: relative; transition: box-shadow .2s, border-color .2s; }
-.price-card:hover { box-shadow: 0 8px 28px rgba(32,36,47,.1); }
-.price-card.feat-coral  { border-color: var(--coral);  background: linear-gradient(135deg, rgba(255,114,107,.06) 0%, #fff 60%); }
-.price-card.feat-marina { border-color: var(--marina); background: linear-gradient(135deg, rgba(118,209,197,.08) 0%, #fff 60%); }
-.price-badge { position: absolute; top: -11px; left: 20px; font-family: var(--display); font-size: 10px; font-weight: 700; padding: 3px 12px; border-radius: 999px; letter-spacing: 0.1em; text-transform: uppercase; }
-.badge-coral  { background: var(--coral);  color: #fff; }
-.badge-marina { background: var(--marina); color: var(--tinta); }
-.badge-melon  { background: var(--melon);  color: var(--tinta); }
-.price-name   { font-family: var(--display); font-size: 16px; font-weight: 700; color: var(--tinta); margin-bottom: 6px; letter-spacing: -0.01em; }
-.price-amount { font-family: var(--display); font-size: 34px; font-weight: 800; color: var(--tinta); letter-spacing: -0.04em; margin-bottom: 4px; }
-.price-amount span { font-size: 16px; font-weight: 400; color: var(--tinta-60); }
-.price-range  { font-family: var(--display); font-size: 24px; font-weight: 800; color: var(--tinta); letter-spacing: -0.03em; margin-bottom: 4px; }
-.price-sub    { font-size: 13px; color: var(--tinta-60); margin-bottom: 14px; }
-.price-feats  { display: flex; flex-direction: column; gap: 7px; }
-.price-feats li { display: flex; gap: 9px; align-items: flex-start; font-size: 14px; color: var(--tinta-60); }
-.chk { flex-shrink: 0; font-weight: 700; }
-.chk-coral  { color: var(--coral);  }
-.chk-marina { color: var(--marina); }
-.price-cta  { margin-top: 18px; width: 100%; justify-content: center; }
-.price-note { font-size: 12px; color: var(--tinta-30); text-align: center; margin-top: 8px; font-family: var(--display); letter-spacing: 0.04em; }
+.price-stack{display:flex;flex-direction:column;gap:10px}
+.price-card{border:1.5px solid var(--tinta-12);border-radius:var(--r-xl);padding:22px 24px;background:#fff;position:relative;transition:box-shadow .2s,border-color .2s}
+.price-card:hover{box-shadow:0 8px 28px rgba(32,36,47,.1)}
+.price-card.feat-coral{border-color:var(--coral);background:linear-gradient(135deg,rgba(255,114,107,.06) 0%,#fff 60%)}
+.price-card.feat-marina{border-color:var(--marina);background:linear-gradient(135deg,rgba(118,209,197,.08) 0%,#fff 60%)}
+.price-badge{position:absolute;top:-11px;left:20px;font-family:var(--display);font-size:10px;font-weight:700;padding:3px 12px;border-radius:999px;letter-spacing:.1em;text-transform:uppercase}
+.badge-coral{background:var(--coral);color:#fff}
+.badge-marina{background:var(--marina);color:var(--tinta)}
+.badge-melon{background:var(--melon);color:var(--tinta)}
+.price-name{font-family:var(--display);font-size:16px;font-weight:700;color:var(--tinta);margin-bottom:6px;letter-spacing:-.01em}
+.price-amount{font-family:var(--display);font-size:34px;font-weight:800;color:var(--tinta);letter-spacing:-.04em;margin-bottom:4px}
+.price-amount span{font-size:16px;font-weight:400;color:var(--tinta-60)}
+.price-range{font-family:var(--display);font-size:24px;font-weight:800;color:var(--tinta);letter-spacing:-.03em;margin-bottom:4px}
+.price-sub{font-size:13px;color:var(--tinta-60);margin-bottom:14px}
+.price-feats{display:flex;flex-direction:column;gap:7px}
+.price-feats li{display:flex;gap:9px;align-items:flex-start;font-size:14px;color:var(--tinta-60)}
+.chk{flex-shrink:0;font-weight:700} .chk-coral{color:var(--coral)} .chk-marina{color:var(--marina)}
+.price-cta{margin-top:18px;width:100%;justify-content:center}
+.price-note{font-size:12px;color:var(--tinta-30);text-align:center;margin-top:8px;font-family:var(--display);letter-spacing:.04em}
 
 /* TWO COL */
-.two-col { display: grid; grid-template-columns: 1fr; gap: clamp(32px,5vw,56px); align-items: start; }
-@media (min-width: 860px) { .two-col { grid-template-columns: 1.2fr 0.8fr; } }
-.two-col.flip > *:first-child { order: 1; }
-@media (min-width: 860px) { .two-col.flip > *:first-child { order: 2; } .two-col.flip > *:last-child { order: 1; } }
+.two-col{display:grid;grid-template-columns:1fr;gap:clamp(32px,5vw,56px);align-items:start}
+@media(min-width:860px){.two-col{grid-template-columns:1.2fr 0.8fr}}
+@media(min-width:860px){.two-col.flip>*:first-child{order:2}.two-col.flip>*:last-child{order:1}}
 
 /* AULA */
-.aula-head-bar { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: var(--r-md); background: var(--marina-dim); border: 1px solid var(--marina-bdr); margin-bottom: 20px; }
-.aula-head-bar span { font-family: var(--display); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #2a9088; }
-.aula-stats { display: flex; gap: 24px; flex-wrap: wrap; padding: 20px 24px; background: #fff; border: 1.5px solid var(--tinta-12); border-radius: var(--r-xl); margin-bottom: 40px; }
-.as-num { font-family: var(--display); font-size: 30px; font-weight: 800; color: var(--tinta); letter-spacing: -0.04em; }
-.as-num b { color: var(--marina); }
-.as-lbl { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--tinta-30); margin-top: 1px; font-family: var(--display); }
-.timeline { position: relative; padding-left: 44px; }
-.timeline::before { content: ''; position: absolute; left: 10px; top: 10px; bottom: 10px; width: 1.5px; background: linear-gradient(to bottom, transparent, var(--tinta-12) 10%, var(--tinta-12) 90%, transparent); }
-.tl-item { position: relative; padding: 0 0 20px 0; }
-.tl-item:last-child { padding-bottom: 0; }
-.tl-node { position: absolute; left: -44px; top: 2px; width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--tinta-12); background: var(--crema); display: flex; align-items: center; justify-content: center; font-family: var(--display); font-size: 9px; font-weight: 700; color: var(--tinta-60); z-index: 1; }
-.tl-node.active { background: var(--marina); border-color: var(--marina); color: var(--tinta); font-size: 10px; }
-.tl-node.cap    { background: var(--coral);  border-color: var(--coral);  color: #fff; font-size: 11px; }
-.tl-body h4 { font-family: var(--display); font-size: 16px; font-weight: 700; color: var(--tinta); margin-bottom: 3px; letter-spacing: -0.01em; }
-.tl-body p  { font-size: 13px; color: var(--tinta-60); line-height: 1.55; margin: 0; }
-.tl-hrs { display: inline-flex; align-items: center; gap: 4px; margin-top: 5px; font-family: var(--display); font-size: 11px; font-weight: 600; color: var(--marina); letter-spacing: 0.06em; }
-.deliverables { background: #fff; border: 1.5px solid var(--tinta-12); border-radius: var(--r-xl); padding: 22px 24px; margin-top: 20px; }
-.dl-ttl { font-family: var(--display); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--marina); margin-bottom: 16px; }
-.dl-list { display: flex; flex-direction: column; gap: 10px; }
-.dl-list li { display: flex; gap: 10px; font-size: 14px; color: var(--tinta-60); align-items: flex-start; line-height: 1.45; }
-.dl-ico { flex-shrink: 0; font-size: 15px; line-height: 1.4; }
-.demo-box { margin-top: 16px; padding: 18px 20px; border: 1.5px dashed var(--marina-bdr); border-radius: var(--r-lg); background: var(--marina-dim); }
-.demo-box p { font-size: 14px; color: #2a9088; line-height: 1.6; }
-.demo-box a { color: #1d7a73; font-weight: 700; }
+.aula-head-bar{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:var(--r-md);background:var(--marina-dim);border:1px solid var(--marina-bdr);margin-bottom:20px}
+.aula-head-bar span{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#2a9088}
+.aula-stats{display:flex;gap:24px;flex-wrap:wrap;padding:20px 24px;background:#fff;border:1.5px solid var(--tinta-12);border-radius:var(--r-xl);margin-bottom:40px}
+.as-num{font-family:var(--display);font-size:30px;font-weight:800;color:var(--tinta);letter-spacing:-.04em}
+.as-num b{color:var(--marina)}
+.as-lbl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-30);margin-top:1px;font-family:var(--display)}
+.timeline{position:relative;padding-left:44px}
+.timeline::before{content:'';position:absolute;left:10px;top:10px;bottom:10px;width:1.5px;background:linear-gradient(to bottom,transparent,var(--tinta-12) 10%,var(--tinta-12) 90%,transparent)}
+.tl-item{position:relative;padding:0 0 20px}
+.tl-item:last-child{padding-bottom:0}
+.tl-node{position:absolute;left:-44px;top:2px;width:22px;height:22px;border-radius:50%;border:2px solid var(--tinta-12);background:var(--crema);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:9px;font-weight:700;color:var(--tinta-60);z-index:1}
+.tl-node.active{background:var(--marina);border-color:var(--marina);color:var(--tinta);font-size:10px}
+.tl-node.cap{background:var(--coral);border-color:var(--coral);color:#fff;font-size:11px}
+.tl-body h4{font-family:var(--display);font-size:16px;font-weight:700;color:var(--tinta);margin-bottom:3px;letter-spacing:-.01em}
+.tl-body p{font-size:13px;color:var(--tinta-60);line-height:1.55;margin:0}
+.tl-hrs{display:inline-flex;align-items:center;gap:4px;margin-top:5px;font-family:var(--display);font-size:11px;font-weight:600;color:var(--marina);letter-spacing:.06em}
+.deliverables{background:#fff;border:1.5px solid var(--tinta-12);border-radius:var(--r-xl);padding:22px 24px;margin-top:20px}
+.dl-ttl{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--marina);margin-bottom:16px}
+.dl-list{display:flex;flex-direction:column;gap:10px}
+.dl-list li{display:flex;gap:10px;font-size:14px;color:var(--tinta-60);align-items:flex-start;line-height:1.45}
+.dl-ico{flex-shrink:0;font-size:15px;line-height:1.4}
+.demo-box{margin-top:16px;padding:18px 20px;border:1.5px dashed var(--marina-bdr);border-radius:var(--r-lg);background:var(--marina-dim)}
+.demo-box p{font-size:14px;color:#2a9088;line-height:1.6}
+.demo-box a{color:#1d7a73;font-weight:700}
 
 /* INSTRUCTOR */
-.inst-photo { aspect-ratio: 3/4; border-radius: var(--r-2xl); background: var(--tinta-06); border: 1.5px solid var(--tinta-12); overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; }
-.inst-photo img { width: 100%; height: 100%; object-fit: cover; }
-.inst-photo .placeholder { font-family: var(--display); font-size: 72px; font-weight: 800; color: var(--tinta-12); letter-spacing: -0.05em; }
-.inst-photo::after { content: ''; position: absolute; bottom: 0; right: 0; border-style: solid; border-width: 0 0 72px 72px; border-color: transparent transparent var(--coral) transparent; }
-.inst-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--tinta); color: var(--crema); border-radius: var(--r-lg); padding: 9px 18px; font-family: var(--display); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; margin-top: 14px; }
-.inst-creds { display: flex; flex-direction: column; gap: 0; margin-top: 22px; }
-.inst-cred { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--tinta-60); padding: 12px 0; border-bottom: 1px solid var(--tinta-12); }
-.inst-cred:last-child { border-bottom: 0; }
-.cred-ic { width: 28px; height: 28px; border-radius: var(--r-sm); background: var(--coral-dim); border: 1px solid var(--coral-bdr); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.inst-photo{aspect-ratio:3/4;border-radius:var(--r-2xl);background:var(--tinta-06);border:1.5px solid var(--tinta-12);overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;max-width:300px}
+.inst-photo img{width:100%;height:100%;object-fit:cover}
+.inst-photo .placeholder{font-family:var(--display);font-size:72px;font-weight:800;color:var(--tinta-12);letter-spacing:-.05em}
+.inst-photo::after{content:'';position:absolute;bottom:0;right:0;border-style:solid;border-width:0 0 72px 72px;border-color:transparent transparent var(--coral) transparent}
+.inst-badge{display:inline-flex;align-items:center;gap:8px;background:var(--tinta);color:var(--crema);border-radius:var(--r-lg);padding:9px 18px;font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.06em;margin-top:14px}
+.inst-creds{display:flex;flex-direction:column;gap:0;margin-top:22px}
+.inst-cred{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--tinta-60);padding:12px 0;border-bottom:1px solid var(--tinta-12)}
+.inst-cred:last-child{border-bottom:0}
+.cred-ic{width:28px;height:28px;border-radius:var(--r-sm);background:var(--coral-dim);border:1px solid var(--coral-bdr);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 
 /* TESTIMONIALS */
-.test-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 36px; }
-@media (min-width: 580px) { .test-grid { grid-template-columns: repeat(2,1fr); } }
-@media (min-width: 900px) { .test-grid { grid-template-columns: repeat(3,1fr); } }
-.test-card { border: 1.5px solid var(--tinta-12); border-radius: var(--r-xl); padding: 24px; background: var(--crema); display: flex; flex-direction: column; gap: 16px; transition: box-shadow .15s; }
-.test-card:hover { box-shadow: 0 8px 28px rgba(32,36,47,.08); }
-.stars { display: flex; gap: 3px; }
-.stars span { color: var(--melon); font-size: 14px; }
-.test-card blockquote { font-size: 15px; color: var(--tinta-60); line-height: 1.65; font-style: italic; flex: 1; border: 0; margin: 0; padding: 0; }
-.test-card blockquote::before { content: '\201C'; color: var(--coral); font-size: 26px; line-height: 0; vertical-align: -11px; margin-right: 3px; font-family: var(--display); font-style: normal; }
-.test-author { display: flex; align-items: center; gap: 11px; }
-.test-author img { width: 48px; height: 56px; border-radius: var(--r-md); object-fit: cover; object-position: center top; border: 1.5px solid var(--tinta-12); flex-shrink: 0; }
-.test-author .name { font-family: var(--display); font-weight: 700; font-size: 14px; color: var(--tinta); }
-.test-author .role { font-size: 12px; color: var(--tinta-30); margin-top: 2px; }
+.test-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px}
+@media(min-width:580px){.test-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.test-grid{grid-template-columns:repeat(3,1fr)}}
+.test-card{border:1.5px solid var(--tinta-12);border-radius:var(--r-xl);padding:24px;background:var(--crema);display:flex;flex-direction:column;gap:16px;transition:box-shadow .15s}
+.test-card:hover{box-shadow:0 8px 28px rgba(32,36,47,.08)}
+.stars{display:flex;gap:3px} .stars span{color:var(--melon);font-size:14px}
+.test-card blockquote{font-size:15px;color:var(--tinta-60);line-height:1.65;font-style:italic;flex:1;border:0;margin:0;padding:0}
+.test-card blockquote::before{content:'\201C';color:var(--coral);font-size:26px;line-height:0;vertical-align:-11px;margin-right:3px;font-family:var(--display);font-style:normal}
+.test-author{display:flex;align-items:center;gap:11px}
+.test-author img{width:48px;height:56px;border-radius:var(--r-md);object-fit:cover;object-position:center top;border:1.5px solid var(--tinta-12);flex-shrink:0}
+.test-author .name{font-family:var(--display);font-weight:700;font-size:14px;color:var(--tinta)}
+.test-author .role{font-size:12px;color:var(--tinta-30);margin-top:2px}
 
 /* CONTACT */
-.contact-cols { display: grid; grid-template-columns: 1fr; gap: clamp(28px,5vw,56px); }
-@media (min-width: 860px) { .contact-cols { grid-template-columns: 1.1fr 0.9fr; } }
-.contact-list { display: flex; flex-direction: column; gap: 12px; margin-top: 22px; }
-.contact-list a { display: inline-flex; align-items: center; gap: 14px; color: var(--tinta); text-decoration: none; transition: color .15s; }
-.contact-list a:hover { color: var(--coral); }
-.contact-list .ic { width: 38px; height: 38px; border-radius: var(--r-md); background: var(--coral-dim); border: 1px solid var(--coral-bdr); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.contact-list .txt { font-size: 14px; font-weight: 500; }
-.route-stack { display: flex; flex-direction: column; gap: 10px; }
-.route-card { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: var(--r-lg); border: 1.5px solid var(--tinta-12); background: #fff; text-decoration: none; color: var(--tinta); transition: border-color .15s, background .15s, transform .12s; }
-.route-card:hover { transform: translateX(3px); }
-.route-card.coral:hover  { border-color: var(--coral);  background: var(--coral-dim); }
-.route-card.marina:hover { border-color: var(--marina); background: var(--marina-dim); }
-.route-pip { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-.route-pip.coral  { background: var(--coral); }
-.route-pip.marina { background: var(--marina); }
-.route-pip.melon  { background: var(--melon); }
-.route-txt .rn { font-family: var(--display); font-size: 15px; font-weight: 700; color: var(--tinta); }
-.route-txt .rd { font-size: 13px; color: var(--tinta-30); margin-top: 2px; }
-.route-arr { margin-left: auto; color: var(--tinta-30); flex-shrink: 0; }
+.contact-cols{display:grid;grid-template-columns:1fr;gap:clamp(28px,5vw,56px)}
+@media(min-width:860px){.contact-cols{grid-template-columns:1.1fr 0.9fr}}
+.contact-list{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.contact-list a{display:inline-flex;align-items:center;gap:14px;color:var(--tinta);text-decoration:none;transition:color .15s}
+.contact-list a:hover{color:var(--coral)}
+.contact-list .ic{width:38px;height:38px;border-radius:var(--r-md);background:var(--coral-dim);border:1px solid var(--coral-bdr);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-list .txt{font-size:14px;font-weight:500}
+.route-stack{display:flex;flex-direction:column;gap:10px}
+.route-card{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:var(--r-lg);border:1.5px solid var(--tinta-12);background:#fff;text-decoration:none;color:var(--tinta);transition:border-color .15s,background .15s,transform .12s}
+.route-card:hover{transform:translateX(3px)}
+.route-card.coral:hover{border-color:var(--coral);background:var(--coral-dim)}
+.route-card.marina:hover{border-color:var(--marina);background:var(--marina-dim)}
+.route-pip{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.route-pip.coral{background:var(--coral)} .route-pip.marina{background:var(--marina)} .route-pip.melon{background:var(--melon)}
+.route-txt .rn{font-family:var(--display);font-size:15px;font-weight:700;color:var(--tinta)}
+.route-txt .rd{font-size:13px;color:var(--tinta-30);margin-top:2px}
+.route-arr{margin-left:auto;color:var(--tinta-30);flex-shrink:0}
 
 /* FOOTER */
-.footer { background: var(--tinta); }
-.footer-inner { padding-top: 52px; padding-bottom: 28px; }
-.footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 36px; flex-wrap: wrap; }
-.footer-brand-name { font-family: var(--display); font-weight: 800; font-size: 20px; letter-spacing: -0.03em; color: var(--crema); }
-.footer-brand-name span { color: var(--coral); }
-.footer-tagline { font-size: 14px; color: rgba(251,245,234,.4); margin-top: 10px; line-height: 1.6; }
-.footer-tagline b { font-weight: 600; color: rgba(251,245,234,.6); }
-.footer-cols { display: flex; gap: 44px; flex-wrap: wrap; }
-.footer-col .ttl { font-family: var(--display); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(251,245,234,.3); margin-bottom: 12px; }
-.footer-col .lnks { display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
-.footer-col a { text-decoration: none; color: rgba(251,245,234,.5); transition: color .15s; }
-.footer-col a:hover { color: var(--coral); }
-.footer-bottom { border-top: 1px solid rgba(251,245,234,.08); margin-top: 40px; padding-top: 22px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; color: rgba(251,245,234,.25); }
-.footer-bottom a { color: rgba(251,245,234,.25); text-decoration: none; transition: color .15s; }
-.footer-bottom a:hover { color: var(--coral); }
-
-:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; }
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+.footer{background:var(--tinta)}
+.footer-inner{padding-top:52px;padding-bottom:28px}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:36px;flex-wrap:wrap}
+.footer-brand-name{font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:-.03em;color:var(--crema)}
+.footer-brand-name span{color:var(--coral)}
+.footer-tagline{font-size:14px;color:rgba(251,245,234,.4);margin-top:10px;line-height:1.6}
+.footer-tagline b{font-weight:600;color:rgba(251,245,234,.6)}
+.footer-cols{display:flex;gap:44px;flex-wrap:wrap}
+.footer-col .ttl{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,245,234,.3);margin-bottom:12px}
+.footer-col .lnks{display:flex;flex-direction:column;gap:8px;font-size:14px}
+.footer-col a{text-decoration:none;color:rgba(251,245,234,.5);transition:color .15s}
+.footer-col a:hover{color:var(--coral)}
+.footer-bottom{border-top:1px solid rgba(251,245,234,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:rgba(251,245,234,.25)}
+.footer-bottom a{color:rgba(251,245,234,.25);text-decoration:none;transition:color .15s}
+.footer-bottom a:hover{color:var(--coral)}
+:focus-visible{outline:2px solid var(--coral);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 
-<!-- ═══ NAV ════════════════════════════════════════ -->
+<!-- NAV -->
 <header class="nav">
   <div class="wrap nav-inner">
-    <a href="https://asesoreducativo.mx" class="brand" aria-label="Volver a asesoreducativo.mx">
+    <a href="https://asesoreducativo.mx" class="brand">
       <span class="chispa" style="font-size:16px">✦</span>
       <span class="brand-logo"><span>Súper</span>Profe</span>
       <div class="brand-sep"></div>
       <span class="brand-sub">por CHEE</span>
     </a>
-
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinksWrap" aria-label="Abrir menú">
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
-
-    <nav class="nav-links-wrap" id="navLinksWrap" aria-label="Principal">
-      <!-- Populated by render.js -->
-      <div id="nav-links-list" style="display:contents"></div>
-
-      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
-        <button data-lang-btn="es" aria-pressed="true">ES</button>
-        <button data-lang-btn="en" aria-pressed="false">EN</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="nav-link" href="#esencial" data-es="Esencial" data-en="Essential">Esencial</a>
+      <a class="nav-link" href="#aula" data-es="Aula" data-en="Classroom">Aula</a>
+      <a class="nav-link" href="#instructor" data-es="Instructor" data-en="Instructor">Instructor</a>
+      <a class="nav-link" href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button data-lang="es" aria-pressed="true">ES</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
       </div>
-
-      <a class="btn btn-coral" id="nav-cta" href="#" target="_blank" rel="noopener">
-        <span id="nav-cta-text"></span>
+      <a class="btn btn-coral" id="nav-wa" href="#" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Z"/></svg>
+        WhatsApp
       </a>
     </nav>
   </div>
 </header>
 
-<!-- ═══ HERO ════════════════════════════════════════ -->
+<!-- HERO -->
 <section class="hero">
   <div class="wrap">
     <div class="hero-inner">
       <div>
-        <div class="hero-kicker-wrap">
+        <div class="hero-kicker">
           <span class="chispa">✦</span>
-          <span class="hero-kicker-text" id="hero-kicker"></span>
+          <span class="hero-kicker-lbl" data-es="Tecnología al servicio del aula" data-en="Technology in service of the classroom">Tecnología al servicio del aula</span>
         </div>
         <h1 class="h1">
-          <span id="hero-headline"></span><br>
-          <span class="alt" id="hero-headline-alt"></span>
+          <span data-es="Tu mejor clase," data-en="Your best class,">Tu mejor clase,</span><br>
+          <span class="alt" data-es="lista para repetirse." data-en="ready to repeat itself.">lista para repetirse.</span>
         </h1>
-        <p class="lead" id="hero-lead" style="margin-bottom:36px;max-width:480px"></p>
-        <div class="hero-cta-wrap">
-          <a class="btn btn-coral btn-lg" href="#esencial" id="hero-cta-primary"></a>
-          <a class="btn btn-ghost-crema btn-lg" id="hero-cta-secondary" href="#" target="_blank" rel="noopener"></a>
+        <p class="lead" style="margin-bottom:36px;max-width:480px"
+           data-es="Tú ya tienes la tecnología. Te enseñamos a usarla para ahorrar horas, llegar más a tus alumnos y dejar de hacerlo todo desde cero."
+           data-en="You already have the technology. We teach you to use it to save hours, connect more with your students, and stop starting from scratch every time.">
+          Tú ya tienes la tecnología. Te enseñamos a usarla para ahorrar horas, llegar más a tus alumnos y dejar de hacerlo todo desde cero.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-coral btn-lg" href="#esencial" data-es="Ver programas" data-en="See programs">Ver programas</a>
+          <a class="btn btn-ghost-crema btn-lg" id="hero-wa" href="#" target="_blank" rel="noopener"
+             data-es="Escribir a Carlos" data-en="Message Carlos">Escribir a Carlos</a>
         </div>
       </div>
-
       <div>
-        <div id="hero-switcher"></div>
-        <div class="hero-stats" id="hero-stats"></div>
+        <div class="hero-switcher">
+          <a class="sw-card coral" href="#esencial">
+            <span class="sw-chispa chispa">✦</span>
+            <div>
+              <div class="sw-name" data-es="SúperProfe Esencial" data-en="SúperProfe Essential">SúperProfe Esencial</div>
+              <div class="sw-tag" data-es="Modular · 10 hrs · cualquier docente" data-en="Modular · 10 hrs · any teacher">Modular · 10 hrs · cualquier docente</div>
+            </div>
+            <svg class="sw-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="sw-card marina" href="#aula">
+            <span class="sw-chispa chispa chispa-marina">✦</span>
+            <div>
+              <div class="sw-name" data-es="SúperProfe Aula" data-en="SúperProfe Classroom">SúperProfe Aula</div>
+              <div class="sw-tag" data-es="Institucional · 16 hrs · Ed. básica · NEM 2022" data-en="Institutional · 16 hrs · Basic Ed. · NEM 2022">Institucional · 16 hrs · Ed. básica · NEM 2022</div>
+            </div>
+            <svg class="sw-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="hs-num">500<b>+</b></div><div class="hs-lbl" data-es="personas capacitadas" data-en="people trained">personas capacitadas</div></div>
+          <div><div class="hs-num">15<b>+</b></div><div class="hs-lbl" data-es="años de experiencia" data-en="years of experience">años de experiencia</div></div>
+          <div><div class="hs-num">17</div><div class="hs-lbl" data-es="instituciones" data-en="institutions">instituciones</div></div>
+        </div>
       </div>
     </div>
   </div>
@@ -337,50 +337,260 @@ hr.rule { border: 0; height: 1px; background: var(--tinta-12); }
 
 <hr class="rule">
 
-<!-- ═══ ESENCIAL ════════════════════════════════════ -->
+<!-- ESENCIAL -->
 <section id="esencial" class="sec-crema section" style="scroll-margin-top:64px">
   <div class="wrap">
     <div class="sec-head">
-      <span class="label" id="esencial-label"></span>
-      <h2 class="h2"><span id="esencial-headline"></span> <span style="color:var(--coral)" id="esencial-headline-accent"></span></h2>
-      <p class="lead" id="esencial-lead" style="max-width:560px"></p>
+      <span class="label" data-es="✦ SúperProfe Esencial" data-en="✦ SúperProfe Essential">✦ SúperProfe Esencial</span>
+      <h2 class="h2"><span data-es="Herramientas digitales" data-en="Digital tools">Herramientas digitales</span> <span style="color:var(--coral)" data-es="a tu ritmo." data-en="at your own pace.">a tu ritmo.</span></h2>
+      <p class="lead" style="max-width:560px"
+         data-es="Para cualquier docente que quiera convertir su material en activos reutilizables, automatizar calificaciones y dominar las videollamadas. Sin fechas fijas, sin prerequisitos."
+         data-en="For any teacher who wants to turn their material into reusable assets, automate grading, and master video calls. No fixed dates, no prerequisites.">
+        Para cualquier docente que quiera convertir su material en activos reutilizables, automatizar calificaciones y dominar las videollamadas. Sin fechas fijas, sin prerequisitos.
+      </p>
     </div>
     <div class="two-col">
-      <div class="mod-grid" id="esencial-modulos"></div>
-      <div class="price-stack" id="esencial-precios"></div>
+      <div class="mod-grid">
+        <div class="mod-row">
+          <div class="mod-num"><span>01</span></div>
+          <div class="mod-body">
+            <h4 data-es="Produce contenido en video" data-en="Produce video content">Produce contenido en video</h4>
+            <p data-es="Celular, CapCut o Clipchamp, Drive y YouTube. Construye un repositorio que tus grupos futuros usarán sin que vuelvas a grabar lo mismo." data-en="Phone, CapCut or Clipchamp, Drive and YouTube. Build a repository your future groups will use without you recording the same thing twice.">Celular, CapCut o Clipchamp, Drive y YouTube. Construye un repositorio que tus grupos futuros usarán sin que vuelvas a grabar lo mismo.</p>
+          </div>
+          <div class="mod-hrs"><span>2 hrs</span></div>
+        </div>
+        <div class="mod-row">
+          <div class="mod-num"><span>02</span></div>
+          <div class="mod-body">
+            <h4 data-es="Videollamadas seguras" data-en="Safe video calls">Videollamadas seguras</h4>
+            <p data-es="Zoom, Meet, Teams — sala de espera, control de participantes, privacidad cuando hay menores." data-en="Zoom, Meet, Teams — waiting rooms, participant control, and privacy when minors are involved.">Zoom, Meet, Teams — sala de espera, control de participantes, privacidad cuando hay menores.</p>
+          </div>
+          <div class="mod-hrs"><span>2 hrs</span></div>
+        </div>
+        <div class="mod-row">
+          <div class="mod-num"><span>03</span></div>
+          <div class="mod-body">
+            <h4 data-es="Hoja de cálculo para el docente" data-en="Spreadsheets for teachers">Hoja de cálculo para el docente</h4>
+            <p data-es="Excel y Google Sheets desde cero. Listas, asistencia automática y formato condicional para detectar quién necesita apoyo." data-en="Excel and Google Sheets from scratch. Lists, automatic attendance, and conditional formatting to spot who needs extra support.">Excel y Google Sheets desde cero. Listas, asistencia automática y formato condicional para detectar quién necesita apoyo.</p>
+          </div>
+          <div class="mod-hrs"><span>2 hrs</span></div>
+        </div>
+        <div class="mod-row">
+          <div class="mod-num"><span>04</span></div>
+          <div class="mod-body">
+            <h4 data-es="Funciones avanzadas" data-en="Advanced functions">Funciones avanzadas</h4>
+            <p data-es="BUSCARV, SI anidado, proporciones, estadística de grupo, validación de datos. El siguiente nivel sin necesitar ser analista." data-en="VLOOKUP, nested IF, proportions, group statistics, data validation. The next level without needing to be an analyst.">BUSCARV, SI anidado, proporciones, estadística de grupo, validación de datos. El siguiente nivel sin necesitar ser analista.</p>
+          </div>
+          <div class="mod-hrs"><span>3 hrs</span></div>
+        </div>
+        <div class="mod-row">
+          <div class="mod-num"><span>05</span></div>
+          <div class="mod-body">
+            <h4 data-es="Maestro generador de contenido" data-en="Content-generating teacher">Maestro generador de contenido</h4>
+            <p data-es="Google Forms con autocorrección, rúbricas en Sheets, capturas de pantalla y Canva gratuito. Instrumentos que se califican solos." data-en="Google Forms with auto-grading, rubrics in Sheets, screenshots, and free Canva for teachers. Assessment tools that grade themselves.">Google Forms con autocorrección, rúbricas en Sheets, capturas de pantalla y Canva gratuito. Instrumentos que se califican solos.</p>
+          </div>
+          <div class="mod-hrs"><span>3 hrs</span></div>
+        </div>
+        <div class="mod-foot">
+          <span data-es="<b>Constancia DC-3 opcional.</b> Cada módulo emite certificado digital. Toma solo el que necesitas o accede a todos con descuento." data-en="<b>Optional DC-3 certificate.</b> Each module issues a digital certificate. Take only what you need or access all at a discount."><b>Constancia DC-3 opcional.</b> Cada módulo emite certificado digital. Toma solo el que necesitas o accede a todos con descuento.</span>
+        </div>
+      </div>
+
+      <div class="price-stack">
+        <div class="price-card">
+          <div class="price-name" data-es="Módulo individual" data-en="Single module">Módulo individual</div>
+          <div class="price-amount">$570 <span data-es="/ módulo" data-en="/ module">/ módulo</span></div>
+          <ul class="price-feats">
+            <li><span class="chk chk-coral">✦</span> <span data-es="Certificado digital" data-en="Digital certificate">Certificado digital</span></li>
+            <li><span class="chk chk-coral">✦</span> <span data-es="Constancia DC-3 (opcional)" data-en="DC-3 certificate (optional)">Constancia DC-3 (opcional)</span></li>
+          </ul>
+          <a class="btn btn-ghost-coral price-cta" data-wa-curso="SúperProfe Esencial — módulo individual" href="#" target="_blank" rel="noopener" data-es="Me interesa" data-en="I'm interested">Me interesa</a>
+        </div>
+        <div class="price-card feat-coral">
+          <div class="price-badge badge-coral" data-es="AHORRAS 10%" data-en="SAVE 10%">AHORRAS 10%</div>
+          <div class="price-name" data-es="Todos los módulos" data-en="All modules">Todos los módulos</div>
+          <div class="price-amount">$2,565 <span data-es="/ persona" data-en="/ person">/ persona</span></div>
+          <ul class="price-feats">
+            <li><span class="chk chk-coral">✦</span> <span data-es="Los 5 módulos completos" data-en="All 5 complete modules">Los 5 módulos completos</span></li>
+            <li><span class="chk chk-coral">✦</span> <span data-es="Certificado digital" data-en="Digital certificate">Certificado digital</span></li>
+            <li><span class="chk chk-coral">✦</span> <span data-es="Constancia DC-3 (opcional)" data-en="DC-3 certificate (optional)">Constancia DC-3 (opcional)</span></li>
+          </ul>
+          <a class="btn btn-coral price-cta" data-wa-curso="SúperProfe Esencial — todos los módulos" href="#" target="_blank" rel="noopener" data-es="Quiero todos los módulos" data-en="I want all modules">Quiero todos los módulos</a>
+        </div>
+        <div class="price-card">
+          <div class="price-badge badge-melon" data-es="AHORRAN 25%" data-en="SAVE 25%">AHORRAN 25%</div>
+          <div class="price-name" data-es="Paquete para grupos" data-en="Group package">Paquete para grupos</div>
+          <div class="price-amount">$8,550 <span data-es="/ 4 personas" data-en="/ 4 people">/ 4 personas</span></div>
+          <ul class="price-feats">
+            <li><span class="chk chk-coral">✦</span> <span data-es="Todos los módulos para 4" data-en="All modules for 4 people">Todos los módulos para 4</span></li>
+            <li><span class="chk chk-coral">✦</span> <span data-es="Certificado por persona" data-en="Certificate per person">Certificado por persona</span></li>
+            <li><span class="chk chk-coral">✦</span> <span data-es="DC-3 opcional" data-en="DC-3 optional">DC-3 opcional</span></li>
+          </ul>
+          <a class="btn btn-ghost-coral price-cta" data-wa-curso="SúperProfe Esencial — paquete grupal" href="#" target="_blank" rel="noopener" data-es="Agenda sesión grupal" data-en="Book group session">Agenda sesión grupal</a>
+        </div>
+        <p class="price-note" data-es="Precios en MXN · IVA incluido · Persona física" data-en="Prices in MXN · VAT included · Persona física">Precios en MXN · IVA incluido · Persona física</p>
+        <p class="price-note" style="margin-top:4px">
+          <span data-es="¿Persona moral?" data-en="Company or institution?">¿Persona moral?</span>
+          <a id="wa-pm" href="#" target="_blank" rel="noopener" style="color:var(--coral);font-weight:700" data-es=" Solicita cotización →" data-en=" Request a quote →"> Solicita cotización →</a>
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
 <hr class="rule">
 
-<!-- ═══ AULA ═════════════════════════════════════════ -->
+<!-- AULA -->
 <section id="aula" class="sec-white section" style="scroll-margin-top:64px">
   <div class="wrap">
     <div class="sec-head">
       <div class="aula-head-bar">
         <span class="chispa chispa-marina" style="font-size:13px">✦</span>
-        <span id="aula-badge"></span>
+        <span data-es="Preescolar · Primaria · Secundaria · Escuelas privadas" data-en="Preschool · Elementary · Middle School · Private Schools">Preescolar · Primaria · Secundaria · Escuelas privadas</span>
       </div>
-      <span class="label" id="aula-label" style="display:block;margin-bottom:14px"></span>
-      <h2 class="h2"><span id="aula-headline"></span> <span style="color:var(--marina);filter:brightness(.85)" id="aula-headline-accent"></span></h2>
-      <p class="lead" id="aula-lead" style="max-width:600px"></p>
+      <span class="label" style="display:block;margin-bottom:14px" data-es="SúperProfe Aula" data-en="SúperProfe Classroom">SúperProfe Aula</span>
+      <h2 class="h2"><span data-es="Tecnología al servicio" data-en="Technology in service">Tecnología al servicio</span> <span style="color:var(--marina);filter:brightness(.85)" data-es="del aula." data-en="of the classroom.">del aula.</span></h2>
+      <p class="lead" style="max-width:600px"
+         data-es="Programa institucional de 16 horas para escuelas privadas de educación básica. Alineado con la Nueva Escuela Mexicana (Plan 2022). Cada docente termina con un portafolio de evidencias real."
+         data-en="16-hour institutional program for private basic education schools. Aligned with Mexico's New School Model (Plan 2022). Each teacher finishes with a real evidence portfolio.">
+        Programa institucional de 16 horas para escuelas privadas de educación básica. Alineado con la Nueva Escuela Mexicana (Plan 2022). Cada docente termina con un portafolio de evidencias real.
+      </p>
     </div>
-    <div class="aula-stats" id="aula-stats"></div>
+
+    <div class="aula-stats">
+      <div><div class="as-num">16<b> hrs</b></div><div class="as-lbl" data-es="duración total" data-en="total duration">duración total</div></div>
+      <div><div class="as-num">6<b> +2</b></div><div class="as-lbl" data-es="módulos + encuadre y cierre" data-en="modules + framing & closing">módulos + encuadre y cierre</div></div>
+      <div><div class="as-num">5</div><div class="as-lbl" data-es="evidencias en el portafolio" data-en="portfolio evidence pieces">evidencias en el portafolio</div></div>
+      <div><div class="as-num">30<b> d</b></div><div class="as-lbl" data-es="seguimiento post-curso" data-en="post-course follow-up">seguimiento post-curso</div></div>
+    </div>
+
     <div class="two-col flip">
       <div>
-        <div class="timeline" id="aula-timeline"></div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-node cap">0</div>
+            <div class="tl-body">
+              <h4 data-es="Encuadre pedagógico" data-en="Pedagogical framing">Encuadre pedagógico</h4>
+              <p data-es="Mapa de fricciones del aula, acuerdo de grupo y plataforma. La tecnología como mediadora, no como fin." data-en="Classroom friction map, group agreement and platform setup. Technology as mediator, not as end goal.">Mapa de fricciones del aula, acuerdo de grupo y plataforma. La tecnología como mediadora, no como fin.</p>
+              <span class="tl-hrs">✦ 1 hr</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-node active">1</div>
+            <div class="tl-body">
+              <h4 data-es="Produce contenido en video" data-en="Produce video content">Produce contenido en video</h4>
+              <p data-es="Videos educativos con el celular, CapCut o Clipchamp. Repositorio en Drive, YouTube opcional." data-en="Educational videos with your phone, CapCut or Clipchamp. Repository in Drive, optional YouTube.">Videos educativos con el celular, CapCut o Clipchamp. Repositorio en Drive, YouTube opcional.</p>
+              <span class="tl-hrs">✦ 2 hrs</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-node active">2</div>
+            <div class="tl-body">
+              <h4 data-es="Videollamadas seguras y productivas" data-en="Safe and productive video calls">Videollamadas seguras y productivas</h4>
+              <p data-es="Google Meet prioritario. Sala de espera, control de participantes, marco legal LGDNNA." data-en="Google Meet as priority. Waiting rooms, participant control, LGDNNA legal framework.">Google Meet prioritario. Sala de espera, control de participantes, marco legal LGDNNA.</p>
+              <span class="tl-hrs">✦ 2 hrs</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-node active">3</div>
+            <div class="tl-body">
+              <h4 data-es="Hoja de cálculo para el docente" data-en="Spreadsheets for teachers">Hoja de cálculo para el docente</h4>
+              <p data-es="Plantilla de calificaciones con promedios automáticos, formato condicional y asistencia desde cero." data-en="Grade template with automatic averages, conditional formatting, and attendance tracking from scratch.">Plantilla de calificaciones con promedios automáticos, formato condicional y asistencia desde cero.</p>
+              <span class="tl-hrs">✦ 3 hrs</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-node active">4</div>
+            <div class="tl-body">
+              <h4 data-es="Funciones avanzadas aplicadas" data-en="Advanced functions applied">Funciones avanzadas aplicadas</h4>
+              <p data-es="BUSCARV, SI anidado con niveles NEM, distribución del grupo con gráficas, validación y protección." data-en="VLOOKUP, nested IF with NEM levels, group distribution charts, validation and protection.">BUSCARV, SI anidado con niveles NEM, distribución del grupo con gráficas, validación y protección.</p>
+              <span class="tl-hrs">✦ 3 hrs</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-node active">5</div>
+            <div class="tl-body">
+              <h4 data-es="Maestro generador de contenido" data-en="Content-generating teacher">Maestro generador de contenido</h4>
+              <p data-es="Google Forms con autocorrección, listas de cotejo, rúbricas analíticas, encuestas socioemocionales." data-en="Google Forms with auto-grading, checklists, analytical rubrics, and social-emotional surveys.">Google Forms con autocorrección, listas de cotejo, rúbricas analíticas, encuestas socioemocionales.</p>
+              <span class="tl-hrs">✦ 3 hrs</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-node cap">✓</div>
+            <div class="tl-body">
+              <h4 data-es="Cierre: portafolio y seguimiento" data-en="Closing: portfolio & follow-up">Cierre: portafolio y seguimiento</h4>
+              <p data-es="Presentación de evidencias, informe ejecutivo para dirección. Seguimiento a 30 días." data-en="Evidence presentation, executive report for management. 30-day follow-up.">Presentación de evidencias, informe ejecutivo para dirección. Seguimiento a 30 días.</p>
+              <span class="tl-hrs">✦ 2 hrs</span>
+            </div>
+          </div>
+        </div>
+
         <div class="deliverables">
-          <div class="dl-ttl" id="aula-portafolio-titulo"></div>
-          <ul class="dl-list" id="aula-portafolio-items"></ul>
+          <div class="dl-ttl" data-es="✦ Portafolio de evidencias — requisito para constancia" data-en="✦ Evidence portfolio — required for certificate">✦ Portafolio de evidencias — requisito para constancia</div>
+          <ul class="dl-list">
+            <li><span class="dl-ico">🎬</span> <span data-es="Video educativo de 2–5 min en Drive o YouTube" data-en="2–5 min educational video in Drive or YouTube">Video educativo de 2–5 min en Drive o YouTube</span></li>
+            <li><span class="dl-ico">🔒</span> <span data-es="Captura de sala de espera activa en videollamada" data-en="Screenshot of active waiting room in video call">Captura de sala de espera activa en videollamada</span></li>
+            <li><span class="dl-ico">📊</span> <span data-es="Hoja de calificaciones con fórmulas y formato condicional" data-en="Grade sheet with formulas and conditional formatting">Hoja de calificaciones con fórmulas y formato condicional</span></li>
+            <li><span class="dl-ico">📈</span> <span data-es="Gráfica de distribución del grupo por nivel de desempeño" data-en="Group distribution chart by performance level">Gráfica de distribución del grupo por nivel de desempeño</span></li>
+            <li><span class="dl-ico">📝</span> <span data-es="Formulario con retroalimentación automática y ≥5 respuestas" data-en="Form with automatic feedback and ≥5 real responses">Formulario con retroalimentación automática y ≥5 respuestas</span></li>
+          </ul>
         </div>
       </div>
+
       <div>
-        <div class="price-stack" id="aula-precios"></div>
-        <div class="demo-box">
-          <p id="aula-demo-texto"></p>
-          <p style="margin-top:8px"><a id="aula-demo-cta" href="#" target="_blank" rel="noopener"></a></p>
+        <div class="price-stack">
+          <div class="price-card">
+            <div class="price-name" data-es="Individual (autogestión)" data-en="Individual (self-paced)">Individual (autogestión)</div>
+            <div class="price-range">$800 – $1,200</div>
+            <p class="price-sub" data-es="por docente · materiales + constancia" data-en="per teacher · materials + certificate">por docente · materiales + constancia</p>
+            <ul class="price-feats">
+              <li><span class="chk chk-marina">✦</span> <span data-es="Materiales descargables por módulo" data-en="Downloadable materials per module">Materiales descargables por módulo</span></li>
+              <li><span class="chk chk-marina">✦</span> <span data-es="Tareas situadas en el aula" data-en="Classroom-situated assignments">Tareas situadas en el aula</span></li>
+              <li><span class="chk chk-marina">✦</span> <span data-es="Constancia con portafolio de evidencias" data-en="Certificate with evidence portfolio">Constancia con portafolio de evidencias</span></li>
+            </ul>
+            <a class="btn btn-ghost-marina price-cta" data-wa-curso="SúperProfe Aula — individual" href="#" target="_blank" rel="noopener" data-es="Me interesa" data-en="I'm interested">Me interesa</a>
+          </div>
+          <div class="price-card feat-marina">
+            <div class="price-badge badge-marina" data-es="MÁS SOLICITADO" data-en="MOST REQUESTED">MÁS SOLICITADO</div>
+            <div class="price-name" data-es="Grupal en escuela (hasta 15)" data-en="Group at school (up to 15)">Grupal en escuela (hasta 15)</div>
+            <div class="price-range">$12,000 – $18,000</div>
+            <p class="price-sub" data-es="por grupo · facilitador en sitio · 4 sesiones de 4 hrs" data-en="per group · on-site facilitator · 4 sessions of 4 hrs">por grupo · facilitador en sitio · 4 sesiones de 4 hrs</p>
+            <ul class="price-feats">
+              <li><span class="chk chk-marina">✦</span> <span data-es="Diagnóstico inicial con el cuerpo docente" data-en="Initial assessment with teaching staff">Diagnóstico inicial con el cuerpo docente</span></li>
+              <li><span class="chk chk-marina">✦</span> <span data-es="Materiales digitales descargables" data-en="Downloadable digital materials">Materiales digitales descargables</span></li>
+              <li><span class="chk chk-marina">✦</span> <span data-es="Canal de soporte entre sesiones" data-en="Support channel between sessions">Canal de soporte entre sesiones</span></li>
+              <li><span class="chk chk-marina">✦</span> <span data-es="Constancia con nombre de la institución" data-en="Certificate with institution name">Constancia con nombre de la institución</span></li>
+              <li><span class="chk chk-marina">✦</span> <span data-es="Informe ejecutivo para dirección" data-en="Executive report for management">Informe ejecutivo para dirección</span></li>
+              <li><span class="chk chk-marina">✦</span> <span data-es="Seguimiento a 30 días con reporte" data-en="30-day follow-up with report">Seguimiento a 30 días con reporte</span></li>
+            </ul>
+            <a class="btn btn-marina price-cta" data-wa-curso="SúperProfe Aula — grupal hasta 15 docentes" href="#" target="_blank" rel="noopener" data-es="Solicitar propuesta" data-en="Request proposal">Solicitar propuesta</a>
+          </div>
+          <div class="price-card">
+            <div class="price-name" data-es="Grupal ampliado (16–30)" data-en="Extended group (16–30)">Grupal ampliado (16–30)</div>
+            <div class="price-range">$18,000 – $28,000</div>
+            <p class="price-sub" data-es="por grupo · misma estructura completa" data-en="per group · same full structure">por grupo · misma estructura completa</p>
+            <ul class="price-feats">
+              <li><span class="chk chk-marina">✦</span> <span data-es="Todo lo del paquete estándar" data-en="Everything in the standard package">Todo lo del paquete estándar</span></li>
+              <li><span class="chk chk-marina">✦</span> <span data-es="Adaptado a grupos grandes" data-en="Adapted for large groups">Adaptado a grupos grandes</span></li>
+            </ul>
+            <a class="btn btn-ghost-marina price-cta" data-wa-curso="SúperProfe Aula — grupal 16-30" href="#" target="_blank" rel="noopener" data-es="Solicitar propuesta" data-en="Request proposal">Solicitar propuesta</a>
+          </div>
+          <div class="price-card">
+            <div class="price-name" data-es="Redes o franquicias (2+ planteles)" data-en="Networks or franchises (2+ campuses)">Redes o franquicias (2+ planteles)</div>
+            <div class="price-range">$600 – $900</div>
+            <p class="price-sub" data-es="por docente · descuento por volumen" data-en="per teacher · volume discount">por docente · descuento por volumen</p>
+            <ul class="price-feats">
+              <li><span class="chk chk-marina">✦</span> <span data-es="Precio preferencial por volumen" data-en="Preferential pricing by volume">Precio preferencial por volumen</span></li>
+              <li><span class="chk chk-marina">✦</span> <span data-es="Informe consolidado por plantel" data-en="Consolidated report per campus">Informe consolidado por plantel</span></li>
+            </ul>
+            <a class="btn btn-ghost-marina price-cta" data-wa-curso="SúperProfe Aula — red de planteles" href="#" target="_blank" rel="noopener" data-es="Solicitar cotización" data-en="Request quote">Solicitar cotización</a>
+          </div>
         </div>
+        <div class="demo-box" style="margin-top:16px">
+          <p><span data-es="<strong>Demo gratuita en tu escuela.</strong> 45 minutos donde tus docentes ven valor real antes de tomar cualquier decisión. Es una clase de muestra, no una presentación de ventas." data-en="<strong>Free demo at your school.</strong> 45 minutes where your teachers see real value before making any decision. It's a sample class, not a sales pitch."><strong>Demo gratuita en tu escuela.</strong> 45 minutos donde tus docentes ven valor real antes de tomar cualquier decisión. Es una clase de muestra, no una presentación de ventas.</span></p>
+          <p style="margin-top:8px"><a id="wa-demo" href="#" target="_blank" rel="noopener" data-es="Agenda la demo →" data-en="Schedule the demo →">Agenda la demo →</a></p>
+        </div>
+        <p class="price-note" style="margin-top:12px" data-es="Precios orientativos · IVA incluido · Ajustables por plaza y escuela" data-en="Indicative prices · VAT included · Adjustable by location and school">Precios orientativos · IVA incluido · Ajustables por plaza y escuela</p>
       </div>
     </div>
   </div>
@@ -388,20 +598,51 @@ hr.rule { border: 0; height: 1px; background: var(--tinta-12); }
 
 <hr class="rule">
 
-<!-- ═══ INSTRUCTOR ══════════════════════════════════ -->
+<!-- INSTRUCTOR -->
 <section id="instructor" class="sec-crema section" style="scroll-margin-top:64px">
   <div class="wrap">
     <div class="two-col" style="gap:clamp(32px,5vw,72px);align-items:center">
-      <div style="max-width:300px">
-        <div class="inst-photo" id="inst-foto"></div>
-        <div class="inst-badge" id="inst-badge"></div>
+      <div>
+        <div class="inst-photo">
+          <!-- Reemplazar con: <img src="assets/carlos.jpg" alt="Mtro. Carlos Chee"> -->
+          <span class="placeholder">CC</span>
+        </div>
+        <div class="inst-badge">
+          <span class="chispa">✦</span>
+          <span data-es="Google Certified Educator Nv. 2" data-en="Google Certified Educator Lv. 2">Google Certified Educator Nv. 2</span>
+        </div>
       </div>
       <div>
-        <span class="label" id="inst-label" style="display:block;margin-bottom:14px"></span>
-        <h2 class="h2" id="inst-nombre" style="margin-bottom:14px"></h2>
-        <p class="lead" id="inst-lead" style="margin-bottom:16px;max-width:520px"></p>
-        <p id="inst-bio" style="font-size:clamp(15px,3vw,17px);color:var(--tinta-60);max-width:480px"></p>
-        <div class="inst-creds" id="inst-creds"></div>
+        <span class="label" style="display:block;margin-bottom:14px" data-es="✦ El instructor" data-en="✦ The instructor">✦ El instructor</span>
+        <h2 class="h2" style="margin-bottom:14px">Mtro. Carlos Chee Vázquez</h2>
+        <p class="lead" style="margin-bottom:16px;max-width:520px"
+           data-es="Maestro de vocación que enseña tecnología como maestro, no como técnico. Cada sesión parte de lo que el docente ya hace y habla el mismo lenguaje del aula."
+           data-en="A teacher by vocation who teaches technology like a teacher, not a technician. Every session starts from what the teacher already does and speaks the language of the classroom.">
+          Maestro de vocación que enseña tecnología como maestro, no como técnico. Cada sesión parte de lo que el docente ya hace y habla el mismo lenguaje del aula.
+        </p>
+        <p style="font-size:clamp(15px,3vw,17px);color:var(--tinta-60);max-width:480px"
+           data-es="Con más de 15 años como instructor ha capacitado a más de 500 personas en instituciones de educación básica, media superior y superior en Baja California."
+           data-en="With over 15 years as an instructor, he has trained more than 500 people at basic, high school, and higher education institutions in Baja California.">
+          Con más de 15 años como instructor ha capacitado a más de 500 personas en instituciones de educación básica, media superior y superior en Baja California.
+        </p>
+        <div class="inst-creds">
+          <div class="inst-cred">
+            <div class="cred-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+            <span data-es="Maestría en Docencia · Universidad Xochicalco" data-en="Master's in Teaching · Universidad Xochicalco">Maestría en Docencia · Universidad Xochicalco</span>
+          </div>
+          <div class="inst-cred">
+            <div class="cred-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h6M9 17h4"/></svg></div>
+            <span data-es="Google Certified Educator Nivel 2" data-en="Google Certified Educator Level 2">Google Certified Educator Nivel 2</span>
+          </div>
+          <div class="inst-cred">
+            <div class="cred-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <span data-es="Conocer EC0217 · Instructor STPS registrado" data-en="Conocer EC0217 · STPS registered instructor">Conocer EC0217 · Instructor STPS registrado</span>
+          </div>
+          <div class="inst-cred">
+            <div class="cred-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg></div>
+            <span data-es="TOEFL ITP · Bilingüe: Español e Inglés" data-en="TOEFL ITP · Bilingual: Spanish & English">TOEFL ITP · Bilingüe: Español e Inglés</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -409,70 +650,222 @@ hr.rule { border: 0; height: 1px; background: var(--tinta-12); }
 
 <hr class="rule">
 
-<!-- ═══ TESTIMONIOS ══════════════════════════════════ -->
+<!-- TESTIMONIOS -->
 <section class="sec-white section">
   <div class="wrap">
     <div class="sec-head">
-      <span class="label" id="test-label"></span>
+      <span class="label" data-es="✦ Testimonios" data-en="✦ Testimonials">✦ Testimonios</span>
       <h2 class="h2" style="margin-bottom:8px">
-        <span id="test-headline"></span> <span style="color:var(--coral)" id="test-headline-accent"></span>
+        <span data-es="De profe" data-en="From teacher">De profe</span> <span style="color:var(--coral)" data-es="a profe." data-en="to teacher.">a profe.</span>
       </h2>
-      <p class="lead" id="test-lead"></p>
+      <p class="lead" data-es="Personas que ya pasaron por aquí — en sus propias palabras." data-en="People who've been through this — in their own words.">Personas que ya pasaron por aquí — en sus propias palabras.</p>
     </div>
-    <div class="test-grid" id="test-grid"></div>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- ═══ CONTACTO ═════════════════════════════════════ -->
-<section id="contacto" class="sec-crema section" style="scroll-margin-top:64px">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="label" id="contact-label"></span>
-      <h2 class="h2" style="margin-bottom:12px">
-        <span id="contact-headline"></span> <span style="color:var(--coral)" id="contact-headline-accent"></span>
-      </h2>
-      <p class="lead" id="contact-lead"></p>
-    </div>
-    <div class="contact-cols">
-      <div class="contact-list" id="contact-datos"></div>
-      <div>
-        <p class="label" id="contact-rutas-label" style="display:block;margin-bottom:14px"></p>
-        <div class="route-stack" id="contact-rutas"></div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <blockquote>Carlos es un excelente asesor; lo recomiendo ampliamente, es claro, paciente, y siempre busca la mejor manera para explicarte cada cosa. Si de alguna no está seguro, sin duda lo investigará y te solucionará cada duda.</blockquote>
+        <div class="test-author">
+          <img src="assets/testimonios/dulce.png" alt="Victoria C. Canceco" loading="lazy">
+          <div><div class="name">Victoria C. Canceco</div><div class="role" data-es="Auxiliar de administración · CFE" data-en="Administrative assistant · CFE">Auxiliar de administración · CFE</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <blockquote>El maestro tiene la capacidad de dirigirse a distintos públicos: tanto si eres novato y te da pena preguntar aspectos básicos, como a otros más especializados. Lo recomiendo, es una persona con paciencia y entusiasmo.</blockquote>
+        <div class="test-author">
+          <img src="assets/testimonios/lilianal.png" alt="Liliana López León" loading="lazy">
+          <div><div class="name">Liliana López León</div><div class="role" data-es="Profesora · CETYS Universidad" data-en="Professor · CETYS Universidad">Profesora · CETYS Universidad</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <blockquote>Tiene conocimiento amplio de los temas, maneja un orden claro, así como metodologías para facilitar sus cursos. Pero sobre todo, una gran amabilidad, paciencia y don de gente.</blockquote>
+        <div class="test-author">
+          <img src="assets/testimonios/melissa.png" alt="Melissa Gómez L." loading="lazy">
+          <div><div class="name">Melissa Gómez L.</div><div class="role" data-es="Gerente de proyectos · Idea Jardín" data-en="Project manager · Idea Jardín">Gerente de proyectos · Idea Jardín</div></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ FOOTER ═══════════════════════════════════════ -->
+<hr class="rule">
+
+<!-- CONTACTO -->
+<section id="contacto" class="sec-crema section" style="scroll-margin-top:64px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label" data-es="✦ Contacto" data-en="✦ Contact">✦ Contacto</span>
+      <h2 class="h2" style="margin-bottom:12px">
+        <span data-es="Tú puedes" data-en="You can do">Tú puedes</span> <span style="color:var(--coral)" data-es="con esto." data-en="this.">con esto.</span>
+      </h2>
+      <p class="lead"
+         data-es="Cuéntame tu situación — docente individual o escuela — y te preparo una propuesta a la medida. La respuesta más rápida es por WhatsApp."
+         data-en="Tell me your situation — individual teacher or school — and I'll put together a tailored proposal. The fastest response is by WhatsApp.">
+        Cuéntame tu situación — docente individual o escuela — y te preparo una propuesta a la medida. La respuesta más rápida es por WhatsApp.
+      </p>
+    </div>
+    <div class="contact-cols">
+      <div class="contact-list">
+        <a id="contact-wa" href="#" target="_blank" rel="noopener">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--coral)"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Z"/></svg></span>
+          <span class="txt">(686) 584.2356</span>
+        </a>
+        <a href="mailto:carlos@asesoreducativo.mx">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
+          <span class="txt">carlos@asesoreducativo.mx</span>
+        </a>
+        <a href="https://asesoreducativo.mx" target="_blank" rel="noopener">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg></span>
+          <span class="txt">asesoreducativo.mx</span>
+        </a>
+      </div>
+      <div>
+        <p class="label" style="display:block;margin-bottom:14px" data-es="¿Qué te interesa?" data-en="What are you looking for?">¿Qué te interesa?</p>
+        <div class="route-stack">
+          <a class="route-card coral" data-wa-curso="SúperProfe Esencial — información general" href="#" target="_blank" rel="noopener">
+            <span class="route-pip coral"></span>
+            <div class="route-txt">
+              <div class="rn" data-es="SúperProfe Esencial" data-en="SúperProfe Essential">SúperProfe Esencial</div>
+              <div class="rd" data-es="Modular · flexible · cualquier docente" data-en="Modular · flexible · any teacher">Modular · flexible · cualquier docente</div>
+            </div>
+            <svg class="route-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="route-card marina" data-wa-curso="SúperProfe Aula — demo gratuita para escuela" href="#" target="_blank" rel="noopener">
+            <span class="route-pip marina"></span>
+            <div class="route-txt">
+              <div class="rn" data-es="SúperProfe Aula" data-en="SúperProfe Classroom">SúperProfe Aula</div>
+              <div class="rd" data-es="Demo gratuita para mi escuela" data-en="Free demo for my school">Demo gratuita para mi escuela</div>
+            </div>
+            <svg class="route-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="route-card" id="wa-noselect" href="#" target="_blank" rel="noopener">
+            <span class="route-pip melon"></span>
+            <div class="route-txt">
+              <div class="rn" data-es="No sé cuál me conviene" data-en="I'm not sure which fits me">No sé cuál me conviene</div>
+              <div class="rd" data-es="Ayúdame a decidir" data-en="Help me decide">Ayúdame a decidir</div>
+            </div>
+            <svg class="route-arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="wrap footer-inner">
     <div class="footer-top">
       <div>
         <div class="footer-brand-name"><span>Súper</span>Profe</div>
-        <div class="footer-tagline" id="footer-tagline"></div>
+        <div class="footer-tagline">
+          <b>✦ <span data-es="Esencial · docentes, a tu ritmo" data-en="Essential · teachers, at your pace">Esencial · docentes, a tu ritmo</span></b><br>
+          <b>✦ <span data-es="Aula · escuelas, transformación completa" data-en="Classroom · schools, full transformation">Aula · escuelas, transformación completa</span></b>
+        </div>
       </div>
       <div class="footer-cols">
         <div class="footer-col">
-          <div class="ttl">Programas</div>
-          <div class="lnks" id="footer-nav-links"></div>
+          <div class="ttl" data-es="Programas" data-en="Programs">Programas</div>
+          <div class="lnks">
+            <a href="#esencial" data-es="SúperProfe Esencial" data-en="SúperProfe Essential">SúperProfe Esencial</a>
+            <a href="#aula" data-es="SúperProfe Aula" data-en="SúperProfe Classroom">SúperProfe Aula</a>
+            <a href="#instructor" data-es="Instructor" data-en="Instructor">Instructor</a>
+            <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+          </div>
         </div>
         <div class="footer-col">
-          <div class="ttl">Contacto</div>
-          <div class="lnks" id="footer-contact-links"></div>
+          <div class="ttl" data-es="Contacto" data-en="Contact">Contacto</div>
+          <div class="lnks">
+            <a id="footer-wa" href="#" target="_blank" rel="noopener">(686) 584.2356</a>
+            <a href="mailto:carlos@asesoreducativo.mx">carlos@asesoreducativo.mx</a>
+            <a href="https://asesoreducativo.mx" target="_blank" rel="noopener">asesoreducativo.mx</a>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span id="footer-copyright"></span>
-      <a id="footer-back-link" href="https://asesoreducativo.mx" target="_blank" rel="noopener">
-        <span id="footer-back"></span>
-      </a>
+      <span>© <span id="year"></span> CHEE · asesor educativo · Mexicali, B.C.</span>
+      <a href="https://asesoreducativo.mx" target="_blank" rel="noopener" data-es="← asesoreducativo.mx" data-en="← asesoreducativo.mx">← asesoreducativo.mx</a>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/render.js"></script>
+<script>
+(function(){
+  'use strict';
+  const WA  = '526865842356';
+  const wa  = (msg) => 'https://wa.me/' + WA + '?text=' + encodeURIComponent(msg);
+  const GEN_ES = 'Hola Carlos, me interesa SúperProfe. ¿Puedes darme más información?';
+  const GEN_EN = 'Hi Carlos, I\'m interested in SúperProfe. Could you share more information?';
+  const DEM_ES = 'Hola Carlos, me interesa una demo gratuita de SúperProfe Aula para mi escuela. ¿Podemos agendar?';
+  const DEM_EN = 'Hi Carlos, I\'d like a free demo of SúperProfe Classroom for my school. Can we schedule one?';
+
+  let lang = localStorage.getItem('sp-lang') || 'es';
+
+  /* ── WhatsApp ─────────────────────────────── */
+  function waGen()  { return wa(lang === 'es' ? GEN_ES : GEN_EN); }
+  function waDemo() { return wa(lang === 'es' ? DEM_ES : DEM_EN); }
+  function waCurso(curso) {
+    const tpl = lang === 'es'
+      ? 'Hola Carlos, me interesa {c}. ¿Puedes darme más información?'
+      : 'Hi Carlos, I\'m interested in {c}. Could you share more information?';
+    return wa(tpl.replace('{c}', curso));
+  }
+
+  function wireWa() {
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const genLinks = ['nav-wa','hero-wa','contact-wa','footer-wa','wa-pm','wa-noselect'];
+    genLinks.forEach(id => { const el = document.getElementById(id); if(el) el.href = waGen(); });
+    const demo = document.getElementById('wa-demo');
+    if (demo) demo.href = waDemo();
+    document.querySelectorAll('[data-wa-curso]').forEach(el => {
+      el.href = waCurso(el.dataset.waCurso);
+    });
+  }
+
+  /* ── Language toggle ──────────────────────── */
+  // Cache es text on first pass
+  document.querySelectorAll('[data-es]').forEach(el => {
+    if (!el.dataset.esCached) {
+      el.dataset.esCached = el.innerHTML;
+    }
+  });
+
+  function applyLang(l) {
+    lang = l;
+    localStorage.setItem('sp-lang', l);
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-es]').forEach(el => {
+      const val = l === 'en' ? el.dataset.en : el.dataset.esCached;
+      if (val !== undefined) el.innerHTML = val;
+    });
+    document.querySelectorAll('[data-lang]').forEach(btn => {
+      btn.setAttribute('aria-pressed', btn.dataset.lang === l ? 'true' : 'false');
+    });
+    wireWa();
+  }
+
+  document.querySelectorAll('[data-lang]').forEach(btn => {
+    btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+  });
+
+  /* ── Nav toggle ───────────────────────────── */
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+  });
+  links.querySelectorAll('a.nav-link').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  /* ── Init ─────────────────────────────────── */
+  applyLang(lang);
+})();
+</script>
 </body>
 </html>
