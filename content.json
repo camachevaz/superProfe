@@ -4,129 +4,55 @@
     "updated": "2026-06",
     "note": "Edita este archivo para actualizar el contenido del sitio. Cada sección tiene claves 'es' y 'en' para español e inglés. No modifiques las claves estructurales (nombres de los objetos)."
   },
+
   "nav": {
     "links": [
-      {
-        "key": "esencial",
-        "es": "Esencial",
-        "en": "Essential",
-        "href": "#esencial"
-      },
-      {
-        "key": "aula",
-        "es": "Aula",
-        "en": "Classroom",
-        "href": "#aula"
-      },
-      {
-        "key": "inst",
-        "es": "Instructor",
-        "en": "Instructor",
-        "href": "#instructor"
-      },
-      {
-        "key": "contact",
-        "es": "Contacto",
-        "en": "Contact",
-        "href": "#contacto"
-      }
+      { "key": "esencial", "es": "Esencial",    "en": "Essential",  "href": "#esencial" },
+      { "key": "aula",     "es": "Aula",         "en": "Classroom",  "href": "#aula" },
+      { "key": "inst",     "es": "Instructor",   "en": "Instructor", "href": "#instructor" },
+      { "key": "contact",  "es": "Contacto",     "en": "Contact",    "href": "#contacto" }
     ],
-    "cta": {
-      "es": "WhatsApp",
-      "en": "WhatsApp"
-    },
-    "back": {
-      "es": "← asesoreducativo.mx",
-      "en": "← asesoreducativo.mx"
-    }
+    "cta": { "es": "WhatsApp", "en": "WhatsApp" },
+    "back": { "es": "← asesoreducativo.mx", "en": "← asesoreducativo.mx" }
   },
+
   "hero": {
-    "kicker": {
-      "es": "Tecnología al servicio del aula",
-      "en": "Technology in service of the classroom"
-    },
-    "headline": {
-      "es": "Tu mejor clase,",
-      "en": "Your best class,"
-    },
-    "headline_alt": {
-      "es": "lista para repetirse.",
-      "en": "ready to repeat itself."
-    },
-    "lead": {
+    "kicker":   { "es": "Tecnología al servicio del aula", "en": "Technology in service of the classroom" },
+    "headline": { "es": "Tu mejor clase,",                 "en": "Your best class," },
+    "headline_alt": { "es": "lista para repetirse.",       "en": "ready to repeat itself." },
+    "lead":     {
       "es": "Tú ya tienes la tecnología. Te enseñamos a usarla para ahorrar horas, llegar más a tus alumnos y dejar de hacerlo todo desde cero.",
       "en": "You already have the technology. We teach you to use it to save hours, connect more with your students, and stop starting from scratch every time."
     },
-    "cta_primary": {
-      "es": "Ver programas",
-      "en": "See programs"
-    },
-    "cta_secondary": {
-      "es": "Escribir a Carlos",
-      "en": "Message Carlos"
-    },
+    "cta_primary":   { "es": "Ver programas",      "en": "See programs" },
+    "cta_secondary": { "es": "Escribir a Carlos",  "en": "Message Carlos" },
     "stats": [
-      {
-        "num": "500",
-        "suffix": "+",
-        "es": "personas capacitadas",
-        "en": "people trained"
-      },
-      {
-        "num": "15",
-        "suffix": "+",
-        "es": "años de experiencia",
-        "en": "years of experience"
-      },
-      {
-        "num": "17",
-        "suffix": "",
-        "es": "instituciones",
-        "en": "institutions"
-      }
+      { "num": "500", "suffix": "+", "es": "personas capacitadas",    "en": "people trained" },
+      { "num": "15",  "suffix": "+", "es": "años de experiencia",     "en": "years of experience" },
+      { "num": "17",  "suffix": "",  "es": "instituciones",           "en": "institutions" }
     ],
     "switcher": [
       {
-        "key": "esencial",
+        "key":   "esencial",
         "color": "coral",
-        "name": {
-          "es": "SúperProfe Esencial",
-          "en": "SúperProfe Essential"
-        },
-        "tag": {
-          "es": "Modular · 10 hrs · cualquier docente",
-          "en": "Modular · 10 hrs · any teacher"
-        },
-        "href": "#esencial"
+        "name":  { "es": "SúperProfe Esencial", "en": "SúperProfe Essential" },
+        "tag":   { "es": "Modular · 10 hrs · cualquier docente", "en": "Modular · 10 hrs · any teacher" },
+        "href":  "#esencial"
       },
       {
-        "key": "aula",
+        "key":   "aula",
         "color": "marina",
-        "name": {
-          "es": "SúperProfe Aula",
-          "en": "SúperProfe Classroom"
-        },
-        "tag": {
-          "es": "Institucional · 16 hrs · Ed. básica · NEM 2022",
-          "en": "Institutional · 16 hrs · Basic Ed. · NEM 2022"
-        },
-        "href": "#aula"
+        "name":  { "es": "SúperProfe Aula",     "en": "SúperProfe Classroom" },
+        "tag":   { "es": "Institucional · 16 hrs · Ed. básica · NEM 2022", "en": "Institutional · 16 hrs · Basic Ed. · NEM 2022" },
+        "href":  "#aula"
       }
     ]
   },
+
   "esencial": {
-    "label": {
-      "es": "SúperProfe Esencial",
-      "en": "SúperProfe Essential"
-    },
-    "headline": {
-      "es": "Herramientas digitales",
-      "en": "Digital tools"
-    },
-    "headline_accent": {
-      "es": "a tu ritmo.",
-      "en": "at your own pace."
-    },
+    "label":    { "es": "SúperProfe Esencial",    "en": "SúperProfe Essential" },
+    "headline": { "es": "Herramientas digitales", "en": "Digital tools" },
+    "headline_accent": { "es": "a tu ritmo.",     "en": "at your own pace." },
     "lead": {
       "es": "Para cualquier docente que quiera convertir su material en activos reutilizables, automatizar calificaciones y dominar las videollamadas. Sin fechas fijas, sin prerequisitos.",
       "en": "For any teacher who wants to turn their material into reusable assets, automate grading, and master video calls. No fixed dates, no prerequisites."
@@ -135,62 +61,32 @@
       {
         "num": "01",
         "hrs": 2,
-        "es": {
-          "titulo": "Produce contenido en video",
-          "desc": "Celular, CapCut o Clipchamp, Drive y YouTube. Construye un repositorio que tus grupos futuros usarán sin que vuelvas a grabar lo mismo."
-        },
-        "en": {
-          "titulo": "Produce video content",
-          "desc": "Phone, CapCut or Clipchamp, Drive and YouTube. Build a repository your future groups will use without you recording the same thing twice."
-        }
+        "es": { "titulo": "Produce contenido en video", "desc": "Celular, CapCut o Clipchamp, Drive y YouTube. Construye un repositorio que tus grupos futuros usarán sin que vuelvas a grabar lo mismo." },
+        "en": { "titulo": "Produce video content",      "desc": "Phone, CapCut or Clipchamp, Drive and YouTube. Build a repository your future groups will use without you recording the same thing twice." }
       },
       {
         "num": "02",
         "hrs": 2,
-        "es": {
-          "titulo": "Videollamadas seguras",
-          "desc": "Zoom, Meet, Teams — sala de espera, control de participantes, privacidad cuando hay menores."
-        },
-        "en": {
-          "titulo": "Safe video calls",
-          "desc": "Zoom, Meet, Teams — waiting rooms, participant control, and privacy when minors are involved."
-        }
+        "es": { "titulo": "Videollamadas seguras", "desc": "Zoom, Meet, Teams — sala de espera, control de participantes, privacidad cuando hay menores." },
+        "en": { "titulo": "Safe video calls",      "desc": "Zoom, Meet, Teams — waiting rooms, participant control, and privacy when minors are involved." }
       },
       {
         "num": "03",
         "hrs": 2,
-        "es": {
-          "titulo": "Hoja de cálculo para el docente",
-          "desc": "Excel y Google Sheets desde cero. Listas, asistencia automática y formato condicional para detectar quién necesita apoyo."
-        },
-        "en": {
-          "titulo": "Spreadsheets for teachers",
-          "desc": "Excel and Google Sheets from scratch. Lists, automatic attendance, and conditional formatting to spot who needs extra support."
-        }
+        "es": { "titulo": "Hoja de cálculo para el docente", "desc": "Excel y Google Sheets desde cero. Listas, asistencia automática y formato condicional para detectar quién necesita apoyo." },
+        "en": { "titulo": "Spreadsheets for teachers",       "desc": "Excel and Google Sheets from scratch. Lists, automatic attendance, and conditional formatting to spot who needs extra support." }
       },
       {
         "num": "04",
         "hrs": 3,
-        "es": {
-          "titulo": "Funciones avanzadas",
-          "desc": "BUSCARV, SI anidado, proporciones, estadística de grupo, validación de datos. El siguiente nivel sin necesitar ser analista."
-        },
-        "en": {
-          "titulo": "Advanced functions",
-          "desc": "VLOOKUP, nested IF, proportions, group statistics, data validation. The next level without needing to be an analyst."
-        }
+        "es": { "titulo": "Funciones avanzadas", "desc": "BUSCARV, SI anidado, proporciones, estadística de grupo, validación de datos. El siguiente nivel sin necesitar ser analista." },
+        "en": { "titulo": "Advanced functions", "desc": "VLOOKUP, nested IF, proportions, group statistics, data validation. The next level without needing to be an analyst." }
       },
       {
         "num": "05",
         "hrs": 3,
-        "es": {
-          "titulo": "Maestro generador de contenido",
-          "desc": "Google Forms con autocorrección, rúbricas en Sheets, capturas de pantalla y Canva gratuito. Instrumentos que se califican solos."
-        },
-        "en": {
-          "titulo": "Content-generating teacher",
-          "desc": "Google Forms with auto-grading, rubrics in Sheets, screenshots, and free Canva for teachers. Assessment tools that grade themselves."
-        }
+        "es": { "titulo": "Maestro generador de contenido", "desc": "Google Forms con autocorrección, rúbricas en Sheets, capturas de pantalla y Canva gratuito. Instrumentos que se califican solos." },
+        "en": { "titulo": "Content-generating teacher",     "desc": "Google Forms with auto-grading, rubrics in Sheets, screenshots, and free Canva for teachers. Assessment tools that grade themselves." }
       }
     ],
     "modulos_footer": {
@@ -199,435 +95,171 @@
     },
     "precios": [
       {
-        "key": "individual",
+        "key":   "individual",
         "amount": "$570",
-        "suffix": {
-          "es": "/ módulo",
-          "en": "/ module"
-        },
-        "nombre": {
-          "es": "Módulo individual",
-          "en": "Single module"
-        },
+        "suffix": { "es": "/ módulo",  "en": "/ module" },
+        "nombre": { "es": "Módulo individual", "en": "Single module" },
         "feats": [
-          {
-            "es": "Certificado digital",
-            "en": "Digital certificate"
-          },
-          {
-            "es": "Constancia DC-3 (opcional)",
-            "en": "DC-3 certificate (optional)"
-          }
+          { "es": "Certificado digital",         "en": "Digital certificate" },
+          { "es": "Constancia DC-3 (opcional)",  "en": "DC-3 certificate (optional)" }
         ],
-        "cta": {
-          "es": "Me interesa",
-          "en": "I'm interested"
-        },
+        "cta": { "es": "Me interesa", "en": "I'm interested" },
         "cta_wa": "SúperProfe Esencial — módulo individual"
       },
       {
-        "key": "todos",
+        "key":     "todos",
         "featured": true,
-        "badge": {
-          "es": "AHORRAS 10%",
-          "en": "SAVE 10%",
-          "color": "coral"
-        },
-        "amount": "$2,565",
-        "suffix": {
-          "es": "/ persona",
-          "en": "/ person"
-        },
-        "nombre": {
-          "es": "Todos los módulos",
-          "en": "All modules"
-        },
+        "badge":   { "es": "AHORRAS 10%",  "en": "SAVE 10%", "color": "coral" },
+        "amount":  "$2,565",
+        "suffix":  { "es": "/ persona",    "en": "/ person" },
+        "nombre":  { "es": "Todos los módulos", "en": "All modules" },
         "feats": [
-          {
-            "es": "Los 5 módulos completos",
-            "en": "All 5 complete modules"
-          },
-          {
-            "es": "Certificado digital",
-            "en": "Digital certificate"
-          },
-          {
-            "es": "Constancia DC-3 (opcional)",
-            "en": "DC-3 certificate (optional)"
-          }
+          { "es": "Los 5 módulos completos",    "en": "All 5 complete modules" },
+          { "es": "Certificado digital",        "en": "Digital certificate" },
+          { "es": "Constancia DC-3 (opcional)", "en": "DC-3 certificate (optional)" }
         ],
-        "cta": {
-          "es": "Quiero todos los módulos",
-          "en": "I want all modules"
-        },
+        "cta": { "es": "Quiero todos los módulos", "en": "I want all modules" },
         "cta_wa": "SúperProfe Esencial — todos los módulos"
       },
       {
-        "key": "grupal",
-        "badge": {
-          "es": "AHORRAN 25%",
-          "en": "SAVE 25%",
-          "color": "melon"
-        },
+        "key":    "grupal",
+        "badge":  { "es": "AHORRAN 25%",   "en": "SAVE 25%", "color": "melon" },
         "amount": "$8,550",
-        "suffix": {
-          "es": "/ 4 personas",
-          "en": "/ 4 people"
-        },
-        "nombre": {
-          "es": "Paquete para grupos",
-          "en": "Group package"
-        },
+        "suffix": { "es": "/ 4 personas",  "en": "/ 4 people" },
+        "nombre": { "es": "Paquete para grupos", "en": "Group package" },
         "feats": [
-          {
-            "es": "Todos los módulos para 4",
-            "en": "All modules for 4 people"
-          },
-          {
-            "es": "Certificado por persona",
-            "en": "Certificate per person"
-          },
-          {
-            "es": "DC-3 opcional",
-            "en": "DC-3 optional"
-          }
+          { "es": "Todos los módulos para 4",   "en": "All modules for 4 people" },
+          { "es": "Certificado por persona",    "en": "Certificate per person" },
+          { "es": "DC-3 opcional",              "en": "DC-3 optional" }
         ],
-        "cta": {
-          "es": "Agenda sesión grupal",
-          "en": "Book group session"
-        },
+        "cta": { "es": "Agenda sesión grupal", "en": "Book group session" },
         "cta_wa": "SúperProfe Esencial — paquete grupal"
       }
     ],
-    "precio_nota": {
-      "es": "Precios en MXN · IVA incluido · Persona física",
-      "en": "Prices in MXN · VAT included · Persona física"
-    },
-    "precio_pm": {
-      "es": "¿Persona moral?",
-      "en": "Empresa o institución?"
-    },
-    "precio_pm_cta": {
-      "es": "Solicita cotización →",
-      "en": "Request a quote →"
-    }
+    "precio_nota":    { "es": "Precios en MXN · IVA incluido · Persona física", "en": "Prices in MXN · VAT included · Persona física" },
+    "precio_pm":      { "es": "¿Persona moral?",       "en": "Empresa o institución?" },
+    "precio_pm_cta":  { "es": "Solicita cotización →", "en": "Request a quote →" }
   },
+
   "aula": {
-    "label": {
-      "es": "SúperProfe Aula",
-      "en": "SúperProfe Classroom"
-    },
-    "badge": {
-      "es": "Preescolar · Primaria · Secundaria · Escuelas privadas",
-      "en": "Preschool · Elementary · Middle School · Private Schools"
-    },
-    "headline": {
-      "es": "Tecnología al servicio",
-      "en": "Technology in service"
-    },
-    "headline_accent": {
-      "es": "del aula.",
-      "en": "of the classroom."
-    },
+    "label":    { "es": "SúperProfe Aula",          "en": "SúperProfe Classroom" },
+    "badge":    { "es": "Preescolar · Primaria · Secundaria · Escuelas privadas", "en": "Preschool · Elementary · Middle School · Private Schools" },
+    "headline": { "es": "Tecnología al servicio",   "en": "Technology in service" },
+    "headline_accent": { "es": "del aula.",         "en": "of the classroom." },
     "lead": {
       "es": "Programa institucional de 16 horas para escuelas privadas de educación básica. Alineado con la Nueva Escuela Mexicana (Plan 2022). Cada docente termina con un portafolio de evidencias real.",
       "en": "16-hour institutional program for private basic education schools. Aligned with Mexico's New School Model (Plan 2022). Each teacher finishes with a real evidence portfolio."
     },
     "stats": [
-      {
-        "num": "16",
-        "suffix_es": " hrs",
-        "suffix_en": " hrs",
-        "label_es": "duración total",
-        "label_en": "total duration"
-      },
-      {
-        "num": "6",
-        "suffix_es": " +2",
-        "suffix_en": " +2",
-        "label_es": "módulos + encuadre y cierre",
-        "label_en": "modules + framing & closing"
-      },
-      {
-        "num": "5",
-        "suffix_es": "",
-        "suffix_en": "",
-        "label_es": "evidencias en el portafolio",
-        "label_en": "portfolio evidence pieces"
-      },
-      {
-        "num": "30",
-        "suffix_es": " d",
-        "suffix_en": " d",
-        "label_es": "seguimiento post-curso",
-        "label_en": "post-course follow-up"
-      }
+      { "num": "16", "suffix_es": " hrs", "suffix_en": " hrs", "label_es": "duración total",              "label_en": "total duration" },
+      { "num": "6",  "suffix_es": " +2",  "suffix_en": " +2",  "label_es": "módulos + encuadre y cierre", "label_en": "modules + framing & closing" },
+      { "num": "5",  "suffix_es": "",     "suffix_en": "",      "label_es": "evidencias en el portafolio", "label_en": "portfolio evidence pieces" },
+      { "num": "30", "suffix_es": " d",   "suffix_en": " d",    "label_es": "seguimiento post-curso",      "label_en": "post-course follow-up" }
     ],
     "modulos": [
       {
-        "num": "0",
-        "hrs": 1,
-        "type": "cap",
-        "es": {
-          "titulo": "Encuadre pedagógico",
-          "desc": "Mapa de fricciones del aula, acuerdo de grupo y plataforma. La tecnología como mediadora, no como fin."
-        },
-        "en": {
-          "titulo": "Pedagogical framing",
-          "desc": "Classroom friction map, group agreement and platform setup. Technology as mediator, not as end goal."
-        }
+        "num": "0", "hrs": 1, "type": "cap",
+        "es": { "titulo": "Encuadre pedagógico",               "desc": "Mapa de fricciones del aula, acuerdo de grupo y plataforma. La tecnología como mediadora, no como fin." },
+        "en": { "titulo": "Pedagogical framing",               "desc": "Classroom friction map, group agreement and platform setup. Technology as mediator, not as end goal." }
       },
       {
-        "num": "1",
-        "hrs": 2,
-        "type": "active",
-        "es": {
-          "titulo": "Produce contenido en video",
-          "desc": "Videos educativos con el celular, CapCut o Clipchamp. Repositorio en Drive, YouTube opcional."
-        },
-        "en": {
-          "titulo": "Produce video content",
-          "desc": "Educational videos with your phone, CapCut or Clipchamp. Repository in Drive, optional YouTube."
-        }
+        "num": "1", "hrs": 2, "type": "active",
+        "es": { "titulo": "Produce contenido en video",        "desc": "Videos educativos con el celular, CapCut o Clipchamp. Repositorio en Drive, YouTube opcional." },
+        "en": { "titulo": "Produce video content",             "desc": "Educational videos with your phone, CapCut or Clipchamp. Repository in Drive, optional YouTube." }
       },
       {
-        "num": "2",
-        "hrs": 2,
-        "type": "active",
-        "es": {
-          "titulo": "Videollamadas seguras y productivas",
-          "desc": "Google Meet prioritario. Sala de espera, control de participantes, marco legal LGDNNA."
-        },
-        "en": {
-          "titulo": "Safe and productive video calls",
-          "desc": "Google Meet as priority. Waiting rooms, participant control, LGDNNA legal framework."
-        }
+        "num": "2", "hrs": 2, "type": "active",
+        "es": { "titulo": "Videollamadas seguras y productivas","desc": "Google Meet prioritario. Sala de espera, control de participantes, marco legal LGDNNA." },
+        "en": { "titulo": "Safe and productive video calls",   "desc": "Google Meet as priority. Waiting rooms, participant control, LGDNNA legal framework." }
       },
       {
-        "num": "3",
-        "hrs": 3,
-        "type": "active",
-        "es": {
-          "titulo": "Hoja de cálculo para el docente",
-          "desc": "Plantilla de calificaciones con promedios automáticos, formato condicional y asistencia desde cero."
-        },
-        "en": {
-          "titulo": "Spreadsheets for teachers",
-          "desc": "Grade template with automatic averages, conditional formatting, and attendance tracking from scratch."
-        }
+        "num": "3", "hrs": 3, "type": "active",
+        "es": { "titulo": "Hoja de cálculo para el docente",   "desc": "Plantilla de calificaciones con promedios automáticos, formato condicional y asistencia desde cero." },
+        "en": { "titulo": "Spreadsheets for teachers",         "desc": "Grade template with automatic averages, conditional formatting, and attendance tracking from scratch." }
       },
       {
-        "num": "4",
-        "hrs": 3,
-        "type": "active",
-        "es": {
-          "titulo": "Funciones avanzadas aplicadas",
-          "desc": "BUSCARV, SI anidado con niveles NEM, distribución del grupo con gráficas, validación y protección."
-        },
-        "en": {
-          "titulo": "Advanced functions applied",
-          "desc": "VLOOKUP, nested IF with NEM levels, group distribution charts, validation and protection."
-        }
+        "num": "4", "hrs": 3, "type": "active",
+        "es": { "titulo": "Funciones avanzadas aplicadas",     "desc": "BUSCARV, SI anidado con niveles NEM, distribución del grupo con gráficas, validación y protección." },
+        "en": { "titulo": "Advanced functions applied",        "desc": "VLOOKUP, nested IF with NEM levels, group distribution charts, validation and protection." }
       },
       {
-        "num": "5",
-        "hrs": 3,
-        "type": "active",
-        "es": {
-          "titulo": "Maestro generador de contenido",
-          "desc": "Google Forms con autocorrección, listas de cotejo, rúbricas analíticas, encuestas socioemocionales."
-        },
-        "en": {
-          "titulo": "Content-generating teacher",
-          "desc": "Google Forms with auto-grading, checklists, analytical rubrics, and social-emotional surveys."
-        }
+        "num": "5", "hrs": 3, "type": "active",
+        "es": { "titulo": "Maestro generador de contenido",    "desc": "Google Forms con autocorrección, listas de cotejo, rúbricas analíticas, encuestas socioemocionales." },
+        "en": { "titulo": "Content-generating teacher",        "desc": "Google Forms with auto-grading, checklists, analytical rubrics, and social-emotional surveys." }
       },
       {
-        "num": "✓",
-        "hrs": 2,
-        "type": "cap",
-        "es": {
-          "titulo": "Cierre: portafolio y seguimiento",
-          "desc": "Presentación de evidencias, informe ejecutivo para dirección. Seguimiento a 30 días."
-        },
-        "en": {
-          "titulo": "Closing: portfolio & follow-up",
-          "desc": "Evidence presentation, executive report for management. 30-day follow-up."
-        }
+        "num": "✓", "hrs": 2, "type": "cap",
+        "es": { "titulo": "Cierre: portafolio y seguimiento",  "desc": "Presentación de evidencias, informe ejecutivo para dirección. Seguimiento a 30 días." },
+        "en": { "titulo": "Closing: portfolio & follow-up",    "desc": "Evidence presentation, executive report for management. 30-day follow-up." }
       }
     ],
-    "portafolio_titulo": {
-      "es": "Portafolio de evidencias — requisito para constancia",
-      "en": "Evidence portfolio — required for certificate"
-    },
+    "portafolio_titulo": { "es": "Portafolio de evidencias — requisito para constancia", "en": "Evidence portfolio — required for certificate" },
     "portafolio_items": [
-      {
-        "ico": "🎬",
-        "es": "Video educativo de 2–5 min en Drive o YouTube",
-        "en": "2–5 min educational video in Drive or YouTube"
-      },
-      {
-        "ico": "🔒",
-        "es": "Captura de sala de espera activa en videollamada",
-        "en": "Screenshot of active waiting room in video call"
-      },
-      {
-        "ico": "📊",
-        "es": "Hoja de calificaciones con fórmulas y formato condicional",
-        "en": "Grade sheet with formulas and conditional formatting"
-      },
-      {
-        "ico": "📈",
-        "es": "Gráfica de distribución del grupo por nivel de desempeño",
-        "en": "Group distribution chart by performance level"
-      },
-      {
-        "ico": "📝",
-        "es": "Formulario con retroalimentación automática y ≥5 respuestas",
-        "en": "Form with automatic feedback and ≥5 real responses"
-      }
+      { "ico": "🎬", "es": "Video educativo de 2–5 min en Drive o YouTube",                           "en": "2–5 min educational video in Drive or YouTube" },
+      { "ico": "🔒", "es": "Captura de sala de espera activa en videollamada",                        "en": "Screenshot of active waiting room in video call" },
+      { "ico": "📊", "es": "Hoja de calificaciones con fórmulas y formato condicional",               "en": "Grade sheet with formulas and conditional formatting" },
+      { "ico": "📈", "es": "Gráfica de distribución del grupo por nivel de desempeño",                "en": "Group distribution chart by performance level" },
+      { "ico": "📝", "es": "Formulario con retroalimentación automática y ≥5 respuestas",             "en": "Form with automatic feedback and ≥5 real responses" }
     ],
     "demo_texto": {
       "es": "<strong>Demo gratuita en tu escuela.</strong> 45 minutos donde tus docentes ven valor real antes de tomar cualquier decisión. Es una clase de muestra, no una presentación de ventas.",
       "en": "<strong>Free demo at your school.</strong> 45 minutes where your teachers see real value before making any decision. It's a sample class, not a sales pitch."
     },
-    "demo_cta": {
-      "es": "Agenda la demo →",
-      "en": "Schedule the demo →"
-    },
+    "demo_cta": { "es": "Agenda la demo →", "en": "Schedule the demo →" },
     "precios": [
       {
-        "key": "individual",
-        "range": "$800 – $1,200",
-        "nombre": {
-          "es": "Individual (autogestión)",
-          "en": "Individual (self-paced)"
-        },
-        "sub": {
-          "es": "por docente · materiales + constancia",
-          "en": "per teacher · materials + certificate"
-        },
+        "key":    "individual",
+        "range":  "$800 – $1,200",
+        "nombre": { "es": "Individual (autogestión)",             "en": "Individual (self-paced)" },
+        "sub":    { "es": "por docente · materiales + constancia", "en": "per teacher · materials + certificate" },
         "feats": [
-          {
-            "es": "Materiales descargables por módulo",
-            "en": "Downloadable materials per module"
-          },
-          {
-            "es": "Tareas situadas en el aula",
-            "en": "Classroom-situated assignments"
-          },
-          {
-            "es": "Constancia con portafolio de evidencias",
-            "en": "Certificate with evidence portfolio"
-          }
+          { "es": "Materiales descargables por módulo",   "en": "Downloadable materials per module" },
+          { "es": "Tareas situadas en el aula",           "en": "Classroom-situated assignments" },
+          { "es": "Constancia con portafolio de evidencias", "en": "Certificate with evidence portfolio" }
         ],
-        "cta": {
-          "es": "Me interesa",
-          "en": "I'm interested"
-        },
+        "cta": { "es": "Me interesa", "en": "I'm interested" },
         "cta_wa": "SúperProfe Aula — individual"
       },
       {
-        "key": "grupal15",
+        "key":     "grupal15",
         "featured": true,
-        "badge": {
-          "es": "MÁS SOLICITADO",
-          "en": "MOST REQUESTED",
-          "color": "marina"
-        },
-        "range": "$12,000 – $18,000",
-        "nombre": {
-          "es": "Grupal en escuela (hasta 15)",
-          "en": "Group at school (up to 15)"
-        },
-        "sub": {
-          "es": "por grupo · facilitador en sitio · 4 sesiones de 4 hrs",
-          "en": "per group · on-site facilitator · 4 sessions of 4 hrs"
-        },
+        "badge":   { "es": "MÁS SOLICITADO", "en": "MOST REQUESTED", "color": "marina" },
+        "range":   "$12,000 – $18,000",
+        "nombre":  { "es": "Grupal en escuela (hasta 15)",       "en": "Group at school (up to 15)" },
+        "sub":     { "es": "por grupo · facilitador en sitio · 4 sesiones de 4 hrs", "en": "per group · on-site facilitator · 4 sessions of 4 hrs" },
         "feats": [
-          {
-            "es": "Diagnóstico inicial con el cuerpo docente",
-            "en": "Initial assessment with teaching staff"
-          },
-          {
-            "es": "Materiales digitales descargables",
-            "en": "Downloadable digital materials"
-          },
-          {
-            "es": "Canal de soporte entre sesiones",
-            "en": "Support channel between sessions"
-          },
-          {
-            "es": "Constancia con nombre de la institución",
-            "en": "Certificate with institution name"
-          },
-          {
-            "es": "Informe ejecutivo para dirección",
-            "en": "Executive report for management"
-          },
-          {
-            "es": "Seguimiento a 30 días con reporte",
-            "en": "30-day follow-up with report"
-          }
+          { "es": "Diagnóstico inicial con el cuerpo docente",    "en": "Initial assessment with teaching staff" },
+          { "es": "Materiales digitales descargables",            "en": "Downloadable digital materials" },
+          { "es": "Canal de soporte entre sesiones",              "en": "Support channel between sessions" },
+          { "es": "Constancia con nombre de la institución",      "en": "Certificate with institution name" },
+          { "es": "Informe ejecutivo para dirección",             "en": "Executive report for management" },
+          { "es": "Seguimiento a 30 días con reporte",            "en": "30-day follow-up with report" }
         ],
-        "cta": {
-          "es": "Solicitar propuesta",
-          "en": "Request proposal"
-        },
+        "cta": { "es": "Solicitar propuesta", "en": "Request proposal" },
         "cta_wa": "SúperProfe Aula — grupal hasta 15 docentes"
       },
       {
-        "key": "grupal30",
-        "range": "$18,000 – $28,000",
-        "nombre": {
-          "es": "Grupal ampliado (16–30)",
-          "en": "Extended group (16–30)"
-        },
-        "sub": {
-          "es": "por grupo · misma estructura completa",
-          "en": "per group · same full structure"
-        },
+        "key":    "grupal30",
+        "range":  "$18,000 – $28,000",
+        "nombre": { "es": "Grupal ampliado (16–30)",            "en": "Extended group (16–30)" },
+        "sub":    { "es": "por grupo · misma estructura completa", "en": "per group · same full structure" },
         "feats": [
-          {
-            "es": "Todo lo del paquete estándar",
-            "en": "Everything in the standard package"
-          },
-          {
-            "es": "Adaptado a grupos grandes",
-            "en": "Adapted for large groups"
-          }
+          { "es": "Todo lo del paquete estándar",  "en": "Everything in the standard package" },
+          { "es": "Adaptado a grupos grandes",     "en": "Adapted for large groups" }
         ],
-        "cta": {
-          "es": "Solicitar propuesta",
-          "en": "Request proposal"
-        },
+        "cta": { "es": "Solicitar propuesta", "en": "Request proposal" },
         "cta_wa": "SúperProfe Aula — grupal 16-30"
       },
       {
-        "key": "redes",
-        "range": "$600 – $900",
-        "nombre": {
-          "es": "Redes o franquicias (2+ planteles)",
-          "en": "Networks or franchises (2+ campuses)"
-        },
-        "sub": {
-          "es": "por docente · descuento por volumen",
-          "en": "per teacher · volume discount"
-        },
+        "key":    "redes",
+        "range":  "$600 – $900",
+        "nombre": { "es": "Redes o franquicias (2+ planteles)", "en": "Networks or franchises (2+ campuses)" },
+        "sub":    { "es": "por docente · descuento por volumen", "en": "per teacher · volume discount" },
         "feats": [
-          {
-            "es": "Precio preferencial por volumen",
-            "en": "Preferential pricing by volume"
-          },
-          {
-            "es": "Informe consolidado por plantel",
-            "en": "Consolidated report per campus"
-          }
+          { "es": "Precio preferencial por volumen",    "en": "Preferential pricing by volume" },
+          { "es": "Informe consolidado por plantel",    "en": "Consolidated report per campus" }
         ],
-        "cta": {
-          "es": "Solicitar cotización",
-          "en": "Request quote"
-        },
+        "cta": { "es": "Solicitar cotización", "en": "Request quote" },
         "cta_wa": "SúperProfe Aula — red de planteles"
       }
     ],
@@ -636,16 +268,11 @@
       "en": "Indicative prices · VAT included · Adjustable by location and school"
     }
   },
+
   "instructor": {
-    "label": {
-      "es": "El instructor",
-      "en": "The instructor"
-    },
-    "nombre": "Mtro. Carlos Chee Vázquez",
-    "badge": {
-      "es": "Google Certified Educator Nv. 2",
-      "en": "Google Certified Educator Lv. 2"
-    },
+    "label":    { "es": "El instructor",       "en": "The instructor" },
+    "nombre":   "Mtro. Carlos Chee Vázquez",
+    "badge":    { "es": "Google Certified Educator Nv. 2", "en": "Google Certified Educator Lv. 2" },
     "lead": {
       "es": "Maestro de vocación que enseña tecnología como maestro, no como técnico. Cada sesión parte de lo que el docente ya hace y habla el mismo lenguaje del aula.",
       "en": "A teacher by vocation who teaches technology like a teacher, not a technician. Every session starts from what the teacher already does and speaks the language of the classroom."
@@ -656,161 +283,90 @@
     },
     "foto": "assets/carlos.jpg",
     "credenciales": [
-      {
-        "es": "Maestría en Docencia · Universidad Xochicalco",
-        "en": "Master's in Teaching · Universidad Xochicalco"
-      },
-      {
-        "es": "Google Certified Educator Nivel 2",
-        "en": "Google Certified Educator Level 2"
-      },
-      {
-        "es": "Conocer EC0217 · Instructor STPS registrado",
-        "en": "Conocer EC0217 · STPS registered instructor"
-      },
-      {
-        "es": "TOEFL ITP · Bilingüe: Español e Inglés",
-        "en": "TOEFL ITP · Bilingual: Spanish & English"
-      }
+      { "es": "Maestría en Docencia · Universidad Xochicalco",  "en": "Master's in Teaching · Universidad Xochicalco" },
+      { "es": "Google Certified Educator Nivel 2",              "en": "Google Certified Educator Level 2" },
+      { "es": "Conocer EC0217 · Instructor STPS registrado",    "en": "Conocer EC0217 · STPS registered instructor" },
+      { "es": "TOEFL ITP · Bilingüe: Español e Inglés",         "en": "TOEFL ITP · Bilingual: Spanish & English" }
     ]
   },
+
   "testimonios": {
-    "label": {
-      "es": "Testimonios",
-      "en": "Testimonials"
-    },
-    "headline": {
-      "es": "De profe",
-      "en": "From teacher"
-    },
-    "headline_accent": {
-      "es": "a profe.",
-      "en": "to teacher."
-    },
-    "lead": {
-      "es": "Personas que ya pasaron por aquí — en sus propias palabras.",
-      "en": "People who've been through this — in their own words."
-    },
+    "label":    { "es": "Testimonios",       "en": "Testimonials" },
+    "headline": { "es": "De profe",          "en": "From teacher" },
+    "headline_accent": { "es": "a profe.",   "en": "to teacher." },
+    "lead":     { "es": "Personas que ya pasaron por aquí — en sus propias palabras.", "en": "People who've been through this — in their own words." },
     "items": [
       {
         "texto": "Carlos es un excelente asesor; lo recomiendo ampliamente, es claro, paciente, y siempre busca la mejor manera para explicarte cada cosa. Si de alguna no está seguro, sin duda lo investigará y te solucionará cada duda.",
         "nombre": "Victoria C. Canceco",
-        "cargo": {
-          "es": "Auxiliar de administración · CFE",
-          "en": "Administrative assistant · CFE"
-        },
-        "foto": "assets/testimonios/dulce.png"
+        "cargo":  { "es": "Auxiliar de administración · CFE", "en": "Administrative assistant · CFE" },
+        "foto":   "assets/testimonios/dulce.png"
       },
       {
         "texto": "El maestro tiene la capacidad de dirigirse a distintos públicos: tanto si eres novato y te da pena preguntar aspectos básicos, como a otros más especializados. Lo recomiendo, es una persona con paciencia y entusiasmo.",
         "nombre": "Liliana López León",
-        "cargo": {
-          "es": "Profesora · CETYS Universidad",
-          "en": "Professor · CETYS Universidad"
-        },
-        "foto": "assets/testimonios/lilianal.png"
+        "cargo":  { "es": "Profesora · CETYS Universidad", "en": "Professor · CETYS Universidad" },
+        "foto":   "assets/testimonios/lilianal.png"
       },
       {
         "texto": "Tiene conocimiento amplio de los temas, maneja un orden claro, así como metodologías para facilitar sus cursos. Pero sobre todo, una gran amabilidad, paciencia y don de gente.",
         "nombre": "Melissa Gómez L.",
-        "cargo": {
-          "es": "Gerente de proyectos · Idea Jardín",
-          "en": "Project manager · Idea Jardín"
-        },
-        "foto": "assets/testimonios/melissa.png"
+        "cargo":  { "es": "Gerente de proyectos · Idea Jardín", "en": "Project manager · Idea Jardín" },
+        "foto":   "assets/testimonios/melissa.png"
       }
     ]
   },
+
   "contacto": {
-    "label": {
-      "es": "Contacto",
-      "en": "Contact"
-    },
-    "headline": {
-      "es": "Tú puedes",
-      "en": "You can do"
-    },
-    "headline_accent": {
-      "es": "con esto.",
-      "en": "this."
-    },
+    "label":    { "es": "Contacto",          "en": "Contact" },
+    "headline": { "es": "Tú puedes",         "en": "You can do" },
+    "headline_accent": { "es": "con esto.",  "en": "this." },
     "lead": {
       "es": "Cuéntame tu situación — docente individual o escuela — y te preparo una propuesta a la medida. La respuesta más rápida es por WhatsApp.",
       "en": "Tell me your situation — individual teacher or school — and I'll put together a tailored proposal. The fastest response is by WhatsApp."
     },
     "datos": {
       "telefono": "(686) 584.2356",
-      "email": "carlos@asesoreducativo.mx",
-      "web": "asesoreducativo.mx",
-      "web_url": "https://asesoreducativo.mx"
+      "email":    "carlos@asesoreducativo.mx",
+      "web":      "asesoreducativo.mx",
+      "web_url":  "https://asesoreducativo.mx"
     },
-    "rutas_label": {
-      "es": "¿Qué te interesa?",
-      "en": "What are you looking for?"
-    },
+    "rutas_label": { "es": "¿Qué te interesa?",  "en": "What are you looking for?" },
     "rutas": [
       {
-        "color": "coral",
-        "pip": "coral",
-        "nombre": {
-          "es": "SúperProfe Esencial",
-          "en": "SúperProfe Essential"
-        },
-        "desc": {
-          "es": "Modular · flexible · cualquier docente",
-          "en": "Modular · flexible · any teacher"
-        },
+        "color":  "coral",
+        "pip":    "coral",
+        "nombre": { "es": "SúperProfe Esencial",           "en": "SúperProfe Essential" },
+        "desc":   { "es": "Modular · flexible · cualquier docente", "en": "Modular · flexible · any teacher" },
         "cta_wa": "SúperProfe Esencial — información general"
       },
       {
-        "color": "marina",
-        "pip": "marina",
-        "nombre": {
-          "es": "SúperProfe Aula",
-          "en": "SúperProfe Classroom"
-        },
-        "desc": {
-          "es": "Demo gratuita para mi escuela",
-          "en": "Free demo for my school"
-        },
+        "color":  "marina",
+        "pip":    "marina",
+        "nombre": { "es": "SúperProfe Aula",               "en": "SúperProfe Classroom" },
+        "desc":   { "es": "Demo gratuita para mi escuela", "en": "Free demo for my school" },
         "cta_wa": "SúperProfe Aula — demo gratuita para escuela"
       },
       {
-        "color": "",
-        "pip": "melon",
-        "nombre": {
-          "es": "No sé cuál me conviene",
-          "en": "I'm not sure which fits me"
-        },
-        "desc": {
-          "es": "Ayúdame a decidir",
-          "en": "Help me decide"
-        },
+        "color":  "",
+        "pip":    "melon",
+        "nombre": { "es": "No sé cuál me conviene",        "en": "I'm not sure which fits me" },
+        "desc":   { "es": "Ayúdame a decidir",             "en": "Help me decide" },
         "cta_wa": null
       }
     ]
   },
+
   "footer": {
-    "tagline_esencial": {
-      "es": "Esencial · docentes, a tu ritmo",
-      "en": "Essential · teachers, at your pace"
-    },
-    "tagline_aula": {
-      "es": "Aula · escuelas, transformación completa",
-      "en": "Classroom · schools, full transformation"
-    },
-    "copyright": {
-      "es": "CHEE · asesor educativo · Mexicali, B.C.",
-      "en": "CHEE · educational advisor · Mexicali, B.C."
-    },
-    "back_link": {
-      "es": "← asesoreducativo.mx",
-      "en": "← asesoreducativo.mx"
-    }
+    "tagline_esencial": { "es": "Esencial · docentes, a tu ritmo",           "en": "Essential · teachers, at your pace" },
+    "tagline_aula":     { "es": "Aula · escuelas, transformación completa",  "en": "Classroom · schools, full transformation" },
+    "copyright":        { "es": "CHEE · asesor educativo · Mexicali, B.C.", "en": "CHEE · educational advisor · Mexicali, B.C." },
+    "back_link":        { "es": "← asesoreducativo.mx", "en": "← asesoreducativo.mx" }
   },
+
   "wa": {
     "number": "526865842356",
-    "msg_gen": {
+    "msg_gen":  {
       "es": "Hola Carlos, me interesa SúperProfe. ¿Puedes darme más información?",
       "en": "Hi Carlos, I'm interested in SúperProfe. Could you share more information?"
     },
